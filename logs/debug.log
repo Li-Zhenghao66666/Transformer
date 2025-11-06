@@ -1,0 +1,1510 @@
+2025-11-03 17:56:26,572 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 2
+	dec_n_heads : 2
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-03 17:56:26,573 [DEBUG]: Config saved to file ./config.json
+2025-11-03 17:56:26,623 [DEBUG]: -----------read data-----------
+2025-11-03 17:56:27,957 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-03 17:56:27,957 [DEBUG]: -----------preprocess data-----------
+2025-11-03 17:56:30,210 [DEBUG]: -----------read data-----------
+2025-11-03 17:56:30,306 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-03 17:56:30,306 [DEBUG]: -----------preprocess data-----------
+2025-11-03 18:03:04,958 [DEBUG]: start validation
+2025-11-03 18:09:44,058 [DEBUG]: start validation
+2025-11-03 18:16:21,930 [DEBUG]: start validation
+2025-11-03 18:23:00,851 [DEBUG]: start validation
+2025-11-03 18:29:40,251 [DEBUG]: start validation
+2025-11-03 18:36:19,692 [DEBUG]: start validation
+2025-11-03 18:42:58,504 [DEBUG]: start validation
+2025-11-03 18:49:37,322 [DEBUG]: start validation
+2025-11-03 18:56:16,848 [DEBUG]: start validation
+2025-11-03 19:02:55,675 [DEBUG]: start validation
+2025-11-03 19:47:56,610 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 4
+	dec_n_layers : 4
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-03 19:47:56,611 [DEBUG]: Config saved to file ./config.json
+2025-11-03 19:47:56,686 [DEBUG]: -----------read data-----------
+2025-11-03 19:47:57,799 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-03 19:47:57,800 [DEBUG]: -----------preprocess data-----------
+2025-11-03 19:47:59,949 [DEBUG]: -----------read data-----------
+2025-11-03 19:48:00,046 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-03 19:48:00,046 [DEBUG]: -----------preprocess data-----------
+2025-11-03 19:59:27,423 [DEBUG]: start validation
+2025-11-03 20:10:47,885 [DEBUG]: start validation
+2025-11-03 20:22:08,588 [DEBUG]: start validation
+2025-11-03 20:33:34,987 [DEBUG]: start validation
+2025-11-03 20:44:55,680 [DEBUG]: start validation
+2025-11-03 20:56:15,518 [DEBUG]: start validation
+2025-11-03 21:07:34,788 [DEBUG]: start validation
+2025-11-03 21:18:54,702 [DEBUG]: start validation
+2025-11-03 21:30:11,025 [DEBUG]: start validation
+2025-11-03 21:41:26,768 [DEBUG]: start validation
+2025-11-04 15:39:53,287 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 4
+	dec_n_layers : 4
+	enc_n_heads : 8
+	dec_n_heads : 8
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 15:39:53,288 [DEBUG]: Config saved to file ./config.json
+2025-11-04 15:39:53,378 [DEBUG]: -----------read data-----------
+2025-11-04 15:39:55,246 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 15:39:55,246 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:39:57,997 [DEBUG]: -----------read data-----------
+2025-11-04 15:39:58,171 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 15:39:58,171 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:42:42,972 [DEBUG]: start validation
+2025-11-04 15:42:46,440 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 6
+	dec_n_layers : 6
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/en_de_layer6
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 15:42:46,441 [DEBUG]: Config saved to file ./config.json
+2025-11-04 15:42:46,518 [DEBUG]: -----------read data-----------
+2025-11-04 15:42:48,780 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 15:42:48,780 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:42:51,747 [DEBUG]: -----------read data-----------
+2025-11-04 15:42:52,011 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 15:42:52,012 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:44:28,649 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 64
+	h_dim : 192
+	enc_n_layers : 6
+	dec_n_layers : 6
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/en_de_layer6
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 15:44:28,650 [DEBUG]: Config saved to file ./config.json
+2025-11-04 15:44:28,742 [DEBUG]: -----------read data-----------
+2025-11-04 15:44:30,604 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 15:44:30,604 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:44:33,506 [DEBUG]: -----------read data-----------
+2025-11-04 15:44:33,705 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 15:44:33,705 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:45:38,149 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 6
+	dec_n_layers : 6
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/en_de_layer6
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 15:45:38,150 [DEBUG]: Config saved to file ./config.json
+2025-11-04 15:45:38,236 [DEBUG]: -----------read data-----------
+2025-11-04 15:45:40,111 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 15:45:40,111 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:45:43,008 [DEBUG]: -----------read data-----------
+2025-11-04 15:45:43,205 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 15:45:43,205 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:45:47,545 [DEBUG]: start validation
+2025-11-04 15:48:53,051 [DEBUG]: start validation
+2025-11-04 15:49:32,758 [DEBUG]: start validation
+2025-11-04 15:51:53,534 [DEBUG]: start validation
+2025-11-04 15:53:37,032 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/en_de_layer2
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 15:53:37,032 [DEBUG]: Config saved to file ./config.json
+2025-11-04 15:53:37,114 [DEBUG]: -----------read data-----------
+2025-11-04 15:53:37,476 [DEBUG]: start validation
+2025-11-04 15:53:39,175 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 15:53:39,175 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:53:42,148 [DEBUG]: -----------read data-----------
+2025-11-04 15:53:42,355 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 15:53:42,355 [DEBUG]: -----------preprocess data-----------
+2025-11-04 15:55:07,951 [DEBUG]: start validation
+2025-11-04 15:55:42,924 [DEBUG]: start validation
+2025-11-04 15:57:57,248 [DEBUG]: start validation
+2025-11-04 15:58:03,261 [DEBUG]: start validation
+2025-11-04 15:58:33,760 [DEBUG]: start validation
+2025-11-04 16:00:51,518 [DEBUG]: start validation
+2025-11-04 16:03:38,951 [DEBUG]: start validation
+2025-11-04 16:03:52,236 [DEBUG]: start validation
+2025-11-04 16:04:32,984 [DEBUG]: start validation
+2025-11-04 16:06:53,494 [DEBUG]: start validation
+2025-11-04 16:06:59,853 [DEBUG]: start validation
+2025-11-04 16:08:17,424 [DEBUG]: start validation
+2025-11-04 16:09:10,058 [DEBUG]: start validation
+2025-11-04 16:10:23,360 [DEBUG]: start validation
+2025-11-04 16:11:26,510 [DEBUG]: start validation
+2025-11-04 16:12:45,188 [DEBUG]: start validation
+2025-11-04 16:13:44,800 [DEBUG]: start validation
+2025-11-04 16:13:49,731 [DEBUG]: start validation
+2025-11-04 16:15:13,237 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 4
+	dec_n_layers : 4
+	enc_n_heads : 8
+	dec_n_heads : 8
+	enc_dropout : 0.05
+	dec_dropout : 0.05
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 50
+	save_dir : ./checkpoint/basetest
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 16:15:13,238 [DEBUG]: Config saved to file ./config.json
+2025-11-04 16:15:13,326 [DEBUG]: -----------read data-----------
+2025-11-04 16:15:15,109 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 16:15:15,109 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:15:18,034 [DEBUG]: -----------read data-----------
+2025-11-04 16:15:18,194 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 16:15:18,194 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:15:42,298 [DEBUG]: start validation
+2025-11-04 16:17:04,942 [DEBUG]: start validation
+2025-11-04 16:18:00,646 [DEBUG]: start validation
+2025-11-04 16:18:27,197 [DEBUG]: start validation
+2025-11-04 16:21:21,090 [DEBUG]: start validation
+2025-11-04 16:21:30,204 [DEBUG]: start validation
+2025-11-04 16:28:08,638 [DEBUG]: start validation
+2025-11-04 16:28:54,788 [DEBUG]: start validation
+2025-11-04 16:32:47,204 [DEBUG]: start validation
+2025-11-04 16:33:44,165 [DEBUG]: start validation
+2025-11-04 16:36:08,986 [DEBUG]: start validation
+2025-11-04 16:36:36,155 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 120
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/h_dim120
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 16:36:36,155 [DEBUG]: Config saved to file ./config.json
+2025-11-04 16:36:36,252 [DEBUG]: -----------read data-----------
+2025-11-04 16:36:38,407 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 16:36:38,407 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:36:41,412 [DEBUG]: -----------read data-----------
+2025-11-04 16:36:41,634 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 16:36:41,635 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:37:12,332 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 240
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 16:37:12,332 [DEBUG]: Config saved to file ./config.json
+2025-11-04 16:37:12,426 [DEBUG]: -----------read data-----------
+2025-11-04 16:37:14,260 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 16:37:14,260 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:37:17,091 [DEBUG]: -----------read data-----------
+2025-11-04 16:37:17,285 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 16:37:17,285 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:38:38,926 [DEBUG]: start validation
+2025-11-04 16:39:21,645 [DEBUG]: start validation
+2025-11-04 16:39:23,098 [DEBUG]: start validation
+2025-11-04 16:40:54,912 [DEBUG]: start validation
+2025-11-04 16:41:35,521 [DEBUG]: start validation
+2025-11-04 16:42:45,436 [DEBUG]: start validation
+2025-11-04 16:43:05,064 [DEBUG]: start validation
+2025-11-04 16:43:49,025 [DEBUG]: start validation
+2025-11-04 16:45:19,550 [DEBUG]: start validation
+2025-11-04 16:46:04,143 [DEBUG]: start validation
+2025-11-04 16:46:04,909 [DEBUG]: start validation
+2025-11-04 16:47:37,302 [DEBUG]: start validation
+2025-11-04 16:48:17,557 [DEBUG]: start validation
+2025-11-04 16:49:27,114 [DEBUG]: start validation
+2025-11-04 16:49:54,582 [DEBUG]: start validation
+2025-11-04 16:50:29,596 [DEBUG]: start validation
+2025-11-04 16:52:08,219 [DEBUG]: start validation
+2025-11-04 16:52:10,805 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.05
+	dec_dropout : 0.05
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 50
+	save_dir : ./checkpoint/basetest
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 16:52:10,806 [DEBUG]: Config saved to file ./config.json
+2025-11-04 16:52:10,885 [DEBUG]: -----------read data-----------
+2025-11-04 16:52:12,769 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 16:52:12,769 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:52:15,579 [DEBUG]: -----------read data-----------
+2025-11-04 16:52:15,770 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 16:52:15,770 [DEBUG]: -----------preprocess data-----------
+2025-11-04 16:52:41,400 [DEBUG]: start validation
+2025-11-04 16:54:13,516 [DEBUG]: start validation
+2025-11-04 16:54:18,013 [DEBUG]: start validation
+2025-11-04 16:55:00,231 [DEBUG]: start validation
+2025-11-04 16:56:24,792 [DEBUG]: start validation
+2025-11-04 16:56:29,882 [DEBUG]: start validation
+2025-11-04 16:57:17,600 [DEBUG]: start validation
+2025-11-04 16:58:34,607 [DEBUG]: start validation
+2025-11-04 16:58:42,254 [DEBUG]: start validation
+2025-11-04 16:59:28,280 [DEBUG]: start validation
+2025-11-04 17:00:28,631 [DEBUG]: start validation
+2025-11-04 17:02:15,084 [DEBUG]: start validation
+2025-11-04 17:04:03,976 [DEBUG]: start validation
+2025-11-04 17:05:56,274 [DEBUG]: start validation
+2025-11-04 17:07:44,802 [DEBUG]: start validation
+2025-11-04 17:09:32,286 [DEBUG]: start validation
+2025-11-04 17:11:16,907 [DEBUG]: start validation
+2025-11-04 17:11:56,701 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.05
+	dec_dropout : 0.05
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/drop0.05
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 17:11:56,701 [DEBUG]: Config saved to file ./config.json
+2025-11-04 17:11:56,785 [DEBUG]: -----------read data-----------
+2025-11-04 17:11:58,698 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 17:11:58,698 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:12:01,672 [DEBUG]: -----------read data-----------
+2025-11-04 17:12:01,880 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 17:12:01,880 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:12:05,933 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.1
+	dec_dropout : 0.1
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/drop0.1
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 17:12:05,933 [DEBUG]: Config saved to file ./config.json
+2025-11-04 17:12:06,043 [DEBUG]: -----------read data-----------
+2025-11-04 17:12:08,016 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 17:12:08,016 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:12:11,103 [DEBUG]: -----------read data-----------
+2025-11-04 17:12:11,294 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 17:12:11,294 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:13:14,189 [DEBUG]: start validation
+2025-11-04 17:14:03,195 [DEBUG]: start validation
+2025-11-04 17:14:13,476 [DEBUG]: start validation
+2025-11-04 17:15:28,067 [DEBUG]: start validation
+2025-11-04 17:16:14,558 [DEBUG]: start validation
+2025-11-04 17:16:23,745 [DEBUG]: start validation
+2025-11-04 17:17:41,867 [DEBUG]: start validation
+2025-11-04 17:18:26,742 [DEBUG]: start validation
+2025-11-04 17:18:37,418 [DEBUG]: start validation
+2025-11-04 17:19:53,179 [DEBUG]: start validation
+2025-11-04 17:20:38,656 [DEBUG]: start validation
+2025-11-04 17:20:44,368 [DEBUG]: start validation
+2025-11-04 17:22:06,573 [DEBUG]: start validation
+2025-11-04 17:22:49,893 [DEBUG]: start validation
+2025-11-04 17:22:56,528 [DEBUG]: start validation
+2025-11-04 17:24:20,153 [DEBUG]: start validation
+2025-11-04 17:25:00,319 [DEBUG]: start validation
+2025-11-04 17:25:12,370 [DEBUG]: start validation
+2025-11-04 17:26:30,729 [DEBUG]: start validation
+2025-11-04 17:27:18,708 [DEBUG]: start validation
+2025-11-04 17:27:25,490 [DEBUG]: start validation
+2025-11-04 17:28:58,530 [DEBUG]: start validation
+2025-11-04 17:29:45,390 [DEBUG]: start validation
+2025-11-04 17:29:57,373 [DEBUG]: start validation
+2025-11-04 17:31:12,077 [DEBUG]: start validation
+2025-11-04 17:31:58,648 [DEBUG]: start validation
+2025-11-04 17:32:09,166 [DEBUG]: start validation
+2025-11-04 17:33:24,603 [DEBUG]: start validation
+2025-11-04 17:34:13,964 [DEBUG]: start validation
+2025-11-04 17:34:22,800 [DEBUG]: start validation
+2025-11-04 17:35:18,615 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 0
+	dec_n_heads : 0
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/head0
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 17:35:18,615 [DEBUG]: Config saved to file ./config.json
+2025-11-04 17:35:18,693 [DEBUG]: -----------read data-----------
+2025-11-04 17:35:20,707 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 17:35:20,707 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:35:23,663 [DEBUG]: -----------read data-----------
+2025-11-04 17:35:23,906 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 17:35:23,906 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:35:25,612 [DEBUG]: start validation
+2025-11-04 17:35:42,595 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.05
+	dec_dropout : 0.05
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/drop0.3
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 17:35:42,595 [DEBUG]: Config saved to file ./config.json
+2025-11-04 17:35:42,688 [DEBUG]: -----------read data-----------
+2025-11-04 17:35:44,597 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 17:35:44,597 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:35:47,546 [DEBUG]: -----------read data-----------
+2025-11-04 17:35:47,763 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 17:35:47,763 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:37:18,311 [DEBUG]: start validation
+2025-11-04 17:37:32,978 [DEBUG]: start validation
+2025-11-04 17:39:09,287 [DEBUG]: start validation
+2025-11-04 17:39:24,728 [DEBUG]: start validation
+2025-11-04 17:41:07,654 [DEBUG]: start validation
+2025-11-04 17:41:18,992 [DEBUG]: start validation
+2025-11-04 17:43:04,674 [DEBUG]: start validation
+2025-11-04 17:43:15,042 [DEBUG]: start validation
+2025-11-04 17:45:02,693 [DEBUG]: start validation
+2025-11-04 17:45:09,695 [DEBUG]: start validation
+2025-11-04 17:45:51,710 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 1
+	dec_n_heads : 1
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/head1
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-04 17:45:51,711 [DEBUG]: Config saved to file ./config.json
+2025-11-04 17:45:51,803 [DEBUG]: -----------read data-----------
+2025-11-04 17:45:53,800 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-04 17:45:53,800 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:45:56,724 [DEBUG]: -----------read data-----------
+2025-11-04 17:45:56,918 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-04 17:45:56,918 [DEBUG]: -----------preprocess data-----------
+2025-11-04 17:47:05,853 [DEBUG]: start validation
+2025-11-04 17:47:11,906 [DEBUG]: start validation
+2025-11-04 17:47:53,422 [DEBUG]: start validation
+2025-11-04 17:49:17,120 [DEBUG]: start validation
+2025-11-04 17:49:23,046 [DEBUG]: start validation
+2025-11-04 17:49:56,795 [DEBUG]: start validation
+2025-11-04 17:51:30,826 [DEBUG]: start validation
+2025-11-04 17:51:37,338 [DEBUG]: start validation
+2025-11-04 17:51:59,646 [DEBUG]: start validation
+2025-11-04 17:53:45,367 [DEBUG]: start validation
+2025-11-04 17:53:51,269 [DEBUG]: start validation
+2025-11-04 17:54:03,480 [DEBUG]: start validation
+2025-11-04 17:55:56,651 [DEBUG]: start validation
+2025-11-04 17:56:00,917 [DEBUG]: start validation
+2025-11-04 17:56:08,050 [DEBUG]: start validation
+2025-11-04 17:57:49,760 [DEBUG]: start validation
+2025-11-04 17:57:56,806 [DEBUG]: start validation
+2025-11-04 17:59:44,545 [DEBUG]: start validation
+2025-11-04 17:59:47,342 [DEBUG]: start validation
+2025-11-04 18:01:35,716 [DEBUG]: start validation
+2025-11-04 18:01:39,898 [DEBUG]: start validation
+2025-11-04 18:03:22,474 [DEBUG]: start validation
+2025-11-04 18:03:35,150 [DEBUG]: start validation
+2025-11-04 18:05:55,337 [DEBUG]: start validation
+2025-11-04 18:06:55,560 [DEBUG]: start validation
+2025-11-04 18:11:02,937 [DEBUG]: start validation
+2025-11-05 15:34:31,047 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.3
+	dec_dropout : 0.3
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/drop0.3
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-05 15:34:31,047 [DEBUG]: Config saved to file ./config.json
+2025-11-05 15:34:31,134 [DEBUG]: -----------read data-----------
+2025-11-05 15:34:32,740 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-05 15:34:32,740 [DEBUG]: -----------preprocess data-----------
+2025-11-05 15:34:35,407 [DEBUG]: -----------read data-----------
+2025-11-05 15:34:35,561 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-05 15:34:35,562 [DEBUG]: -----------preprocess data-----------
+2025-11-05 15:37:41,603 [DEBUG]: start validation
+2025-11-05 15:40:54,821 [DEBUG]: start validation
+2025-11-05 15:44:06,856 [DEBUG]: start validation
+2025-11-05 15:47:19,402 [DEBUG]: start validation
+2025-11-05 15:51:22,478 [DEBUG]: start validation
+2025-11-05 15:54:24,035 [DEBUG]: start validation
+2025-11-05 15:57:31,707 [DEBUG]: start validation
+2025-11-05 16:00:21,524 [DEBUG]: start validation
+2025-11-05 16:03:17,752 [DEBUG]: start validation
+2025-11-05 16:06:29,399 [DEBUG]: start validation
+2025-11-05 16:31:05,194 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+2025-11-05 16:31:26,236 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+2025-11-05 16:40:26,667 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+2025-11-06 15:22:35,405 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.en.token
+	trg_train_data : dataset/train.de.token
+	src_valid_data : dataset/val.en.token
+	trg_valid_data : dataset/val.de.token
+	src_vocab : dataset/en_vocab.pkl
+	trg_vocab : dataset/de_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 50
+	save_dir : ./checkpoint/en2de
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/en2de/config.json
+	seed : 1234
+
+
+2025-11-06 15:23:37,169 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.en.token
+	trg_train_data : dataset/train.de.token
+	src_valid_data : dataset/val.en.token
+	trg_valid_data : dataset/val.de.token
+	src_vocab : dataset/en_vocab.pkl
+	trg_vocab : dataset/de_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 50
+	save_dir : ./checkpoint/en2de
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/en2de/config.json
+	seed : 1234
+
+
+2025-11-06 15:24:13,561 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.en.token
+	trg_train_data : dataset/train.de.token
+	src_valid_data : dataset/val.en.token
+	trg_valid_data : dataset/val.de.token
+	src_vocab : dataset/en_vocab.pkl
+	trg_vocab : dataset/de_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 50
+	save_dir : ./checkpoint/en2de
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/en2de/config.json
+	seed : 1234
+
+
+2025-11-06 15:24:13,562 [DEBUG]: Config saved to file ./checkpoint/en2de/config.json
+2025-11-06 15:24:13,649 [DEBUG]: -----------read data-----------
+2025-11-06 15:24:15,337 [DEBUG]: dataset/train.en.token and dataset/train.de.token has data 185500
+2025-11-06 15:24:15,338 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:24:17,583 [DEBUG]: -----------read data-----------
+2025-11-06 15:24:17,702 [DEBUG]: dataset/val.en.token and dataset/val.de.token has data 20612
+2025-11-06 15:24:17,702 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:27:24,054 [DEBUG]: start validation
+2025-11-06 15:29:46,161 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 16
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/batchsize16
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-06 15:29:46,161 [DEBUG]: Config saved to file ./config.json
+2025-11-06 15:29:46,247 [DEBUG]: -----------read data-----------
+2025-11-06 15:29:47,891 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 15:29:47,892 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:29:50,247 [DEBUG]: -----------read data-----------
+2025-11-06 15:29:50,359 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-06 15:29:50,359 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:30:35,165 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 64
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2025-11-06 15:30:35,165 [DEBUG]: Config saved to file ./config.json
+2025-11-06 15:30:35,250 [DEBUG]: -----------read data-----------
+2025-11-06 15:30:36,839 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 15:30:36,840 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:30:38,164 [DEBUG]: start validation
+2025-11-06 15:30:39,136 [DEBUG]: -----------read data-----------
+2025-11-06 15:30:39,254 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-06 15:30:39,254 [DEBUG]: -----------preprocess data-----------
+2025-11-06 15:32:18,417 [DEBUG]: start validation
+2025-11-06 15:33:52,045 [DEBUG]: start validation
+2025-11-06 15:34:03,551 [DEBUG]: start validation
+2025-11-06 15:36:31,815 [DEBUG]: start validation
+2025-11-06 15:36:37,760 [DEBUG]: start validation
+2025-11-06 15:38:06,847 [DEBUG]: start validation
+2025-11-06 15:38:26,219 [DEBUG]: start validation
+2025-11-06 15:40:13,719 [DEBUG]: start validation
+2025-11-06 15:41:26,769 [DEBUG]: start validation
+2025-11-06 15:42:01,548 [DEBUG]: start validation
+2025-11-06 15:42:47,011 [DEBUG]: start validation
+2025-11-06 15:43:47,517 [DEBUG]: start validation
+2025-11-06 15:44:46,650 [DEBUG]: start validation
+2025-11-06 15:45:32,269 [DEBUG]: start validation
+2025-11-06 15:47:13,776 [DEBUG]: start validation
+2025-11-06 15:47:53,261 [DEBUG]: start validation
+2025-11-06 15:48:26,623 [DEBUG]: start validation
+2025-11-06 15:48:57,079 [DEBUG]: start validation
+2025-11-06 15:50:53,468 [DEBUG]: start validation
+2025-11-06 15:53:35,743 [DEBUG]: start validation
+2025-11-06 15:53:47,061 [DEBUG]: start validation
+2025-11-06 15:56:51,714 [DEBUG]: start validation
+2025-11-06 15:58:52,317 [DEBUG]: start validation
+2025-11-06 15:59:44,232 [DEBUG]: start validation
+2025-11-06 16:02:51,215 [DEBUG]: start validation
+2025-11-06 16:04:27,473 [DEBUG]: start validation
+2025-11-06 16:05:51,265 [DEBUG]: start validation
+2025-11-06 16:09:03,705 [DEBUG]: start validation
+2025-11-06 16:10:31,673 [DEBUG]: start validation
+2025-11-06 16:12:15,682 [DEBUG]: start validation
+2025-11-06 16:15:28,831 [DEBUG]: start validation
+2025-11-06 16:16:43,581 [DEBUG]: start validation
+2025-11-06 16:18:43,619 [DEBUG]: start validation
+2025-11-06 16:21:57,152 [DEBUG]: start validation
+2025-11-06 16:22:57,365 [DEBUG]: start validation
+2025-11-06 16:25:10,634 [DEBUG]: start validation
+2025-11-06 16:28:10,516 [DEBUG]: start validation
+2025-11-06 16:28:34,389 [DEBUG]: start validation
+2025-11-06 16:31:17,186 [DEBUG]: start validation
+2025-11-06 16:34:30,000 [DEBUG]: start validation
+2025-11-06 16:37:43,360 [DEBUG]: start validation
+2025-11-06 16:40:46,877 [DEBUG]: start validation
+2025-11-06 16:43:56,595 [DEBUG]: start validation
+2025-11-06 16:47:01,801 [DEBUG]: start validation
+2025-11-06 16:50:12,039 [DEBUG]: start validation
+2025-11-06 16:53:21,346 [DEBUG]: start validation
+2025-11-06 16:57:03,416 [DEBUG]: start validation
+2025-11-06 17:00:00,748 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.001
+	optimizer : adamax
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/opt_adamax
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/opt_adamax/config.json
+	seed : 1234
+
+
+2025-11-06 17:00:13,959 [DEBUG]: start validation
+2025-11-06 17:00:14,254 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.1
+	optimizer : sgd
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/opt_sgd
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/opt_sgd/config.json
+	seed : 1234
+
+
+2025-11-06 17:01:39,554 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.001
+	optimizer : adamax
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/optimizer/adamax
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/optimizer/adamax/config.json
+	seed : 1234
+
+
+2025-11-06 17:01:39,554 [DEBUG]: Config saved to file ./checkpoint/optimizer/adamax/config.json
+2025-11-06 17:01:39,640 [DEBUG]: -----------read data-----------
+2025-11-06 17:01:41,388 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 17:01:41,389 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:01:44,209 [DEBUG]: -----------read data-----------
+2025-11-06 17:01:44,370 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-06 17:01:44,370 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:02:05,327 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.1
+	optimizer : sgd
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/optimizer/sgd
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/optimizer/sgd/config.json
+	seed : 1234
+
+
+2025-11-06 17:03:25,868 [DEBUG]: start validation
+2025-11-06 17:03:35,498 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.1
+	optimizer : sgd
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/optimizer/sgd
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/optimizer/sgd/config.json
+	seed : 1234
+
+
+2025-11-06 17:04:22,222 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.1
+	optimizer : sgd
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/sgd
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/sgd/config.json
+	seed : 1234
+
+
+2025-11-06 17:04:49,829 [DEBUG]: start validation
+2025-11-06 17:06:18,759 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.1
+	optimizer : sgd
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/sgd
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/sgd/config.json
+	seed : 1234
+
+
+2025-11-06 17:06:18,759 [DEBUG]: Config saved to file ./checkpoint/sgd/config.json
+2025-11-06 17:06:18,844 [DEBUG]: -----------read data-----------
+2025-11-06 17:06:20,589 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 17:06:20,590 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:06:23,386 [DEBUG]: -----------read data-----------
+2025-11-06 17:06:23,549 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-06 17:06:23,549 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:06:36,353 [DEBUG]: start validation
+2025-11-06 17:08:05,034 [DEBUG]: start validation
+2025-11-06 17:09:25,884 [DEBUG]: start validation
+2025-11-06 17:09:50,517 [DEBUG]: start validation
+2025-11-06 17:11:16,688 [DEBUG]: start validation
+2025-11-06 17:12:36,976 [DEBUG]: start validation
+2025-11-06 17:13:04,282 [DEBUG]: start validation
+2025-11-06 17:14:32,742 [DEBUG]: start validation
+2025-11-06 17:16:56,894 [DEBUG]: start validation
+2025-11-06 17:18:00,637 [DEBUG]: start validation
+2025-11-06 17:21:13,349 [DEBUG]: start validation
+2025-11-06 17:24:06,199 [DEBUG]: start validation
+2025-11-06 17:24:35,719 [DEBUG]: start validation
+2025-11-06 17:25:59,270 [DEBUG]: start validation
+2025-11-06 17:27:13,441 [DEBUG]: start validation
+2025-11-06 17:27:49,899 [DEBUG]: start validation
+2025-11-06 17:29:08,897 [DEBUG]: start validation
+2025-11-06 17:30:19,015 [DEBUG]: start validation
+2025-11-06 17:32:18,889 [DEBUG]: start validation
+2025-11-06 17:33:26,830 [DEBUG]: start validation
+2025-11-06 17:35:30,877 [DEBUG]: start validation
+2025-11-06 17:36:29,666 [DEBUG]: start validation
+2025-11-06 17:38:42,148 [DEBUG]: start validation
+2025-11-06 17:39:34,625 [DEBUG]: start validation
+2025-11-06 17:42:34,156 [DEBUG]: start validation
+2025-11-06 17:42:50,646 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.001
+	optimizer : adamax
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/optimizer/adamax
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/optimizer/adamax/config.json
+	seed : 1234
+
+
+2025-11-06 17:42:50,647 [DEBUG]: Config saved to file ./checkpoint/optimizer/adamax/config.json
+2025-11-06 17:42:50,733 [DEBUG]: -----------read data-----------
+2025-11-06 17:42:52,217 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 17:42:52,217 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:42:54,244 [DEBUG]: -----------read data-----------
+2025-11-06 17:42:54,359 [DEBUG]: dataset/val.de.token and dataset/val.en.token has data 20612
+2025-11-06 17:42:54,359 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:45:53,398 [DEBUG]: start validation
+2025-11-06 17:49:02,122 [DEBUG]: start validation
+2025-11-06 17:49:11,917 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.de.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.de.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/de_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 192
+	enc_n_layers : 2
+	dec_n_layers : 2
+	enc_n_heads : 6
+	dec_n_heads : 6
+	enc_dropout : 0.2
+	dec_dropout : 0.2
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0001
+	epochs : 10
+	save_dir : ./checkpoint/base
+	save_epochs : 5
+	early_stop : True
+	patience : 10
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./checkpoint/base/config.json
+	seed : 1234
+
+
+2025-11-06 17:49:11,917 [DEBUG]: Config saved to file ./checkpoint/base/config.json
+2025-11-06 17:49:12,010 [DEBUG]: -----------read data-----------
+2025-11-06 17:49:13,530 [DEBUG]: dataset/train.de.token and dataset/train.en.token has data 185500
+2025-11-06 17:49:13,530 [DEBUG]: -----------preprocess data-----------
+2025-11-06 17:52:12,115 [DEBUG]: start validation
+2025-11-06 17:55:22,888 [DEBUG]: start validation
+2025-11-06 17:58:33,399 [DEBUG]: start validation
+2025-11-06 18:01:43,999 [DEBUG]: start validation
+2025-11-06 18:04:55,895 [DEBUG]: start validation
+2025-11-06 18:08:05,763 [DEBUG]: start validation
+2025-11-06 18:12:04,492 [DEBUG]: start validation
+2025-11-06 18:18:17,715 [DEBUG]: start validation
+2025-11-06 20:19:35,831 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+2025-11-06 20:20:12,853 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+2025-11-06 20:21:48,077 [DEBUG]: Config loaded from file config.json
+2025-11-06 20:22:18,388 [DEBUG]: Config loaded from file config.json

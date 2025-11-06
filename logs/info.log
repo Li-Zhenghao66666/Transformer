@@ -1,0 +1,2060 @@
+2025-11-03 17:56:31,111 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (1): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (1): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-03 18:03:25,248 [INFO]: Train Epoch: 1 | train_loss: 4.310147 | val_loss: 3.806357 | BLEU: 0.0540 | Acc: 0.3745 | PPL: 44.9863
+2025-11-03 18:03:25,407 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:10:03,777 [INFO]: Train Epoch: 2 | train_loss: 3.949678 | val_loss: 3.654257 | BLEU: 0.0695 | Acc: 0.3942 | PPL: 38.6388
+2025-11-03 18:10:03,922 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:16:41,526 [INFO]: Train Epoch: 3 | train_loss: 3.865676 | val_loss: 3.564707 | BLEU: 0.0803 | Acc: 0.4083 | PPL: 35.3291
+2025-11-03 18:16:41,665 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:23:20,698 [INFO]: Train Epoch: 4 | train_loss: 3.811216 | val_loss: 3.494140 | BLEU: 0.0853 | Acc: 0.4180 | PPL: 32.9220
+2025-11-03 18:23:20,841 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:30:00,062 [INFO]: Train Epoch: 5 | train_loss: 3.780233 | val_loss: 3.466617 | BLEU: 0.0893 | Acc: 0.4224 | PPL: 32.0282
+2025-11-03 18:30:00,214 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:30:00,355 [INFO]: Saving checkpoint: ./checkpoint\checkpoint_epoch_5.pt
+2025-11-03 18:36:39,818 [INFO]: Train Epoch: 6 | train_loss: 3.762083 | val_loss: 3.499223 | BLEU: 0.0859 | Acc: 0.4171 | PPL: 33.0897
+2025-11-03 18:43:18,556 [INFO]: Train Epoch: 7 | train_loss: 3.750308 | val_loss: 3.448184 | BLEU: 0.0907 | Acc: 0.4244 | PPL: 31.4432
+2025-11-03 18:43:18,706 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 18:49:57,377 [INFO]: Train Epoch: 8 | train_loss: 3.739472 | val_loss: 3.474516 | BLEU: 0.0901 | Acc: 0.4220 | PPL: 32.2822
+2025-11-03 18:56:36,636 [INFO]: Train Epoch: 9 | train_loss: 3.732342 | val_loss: 3.462843 | BLEU: 0.0913 | Acc: 0.4237 | PPL: 31.9076
+2025-11-03 19:03:15,286 [INFO]: Train Epoch: 10 | train_loss: 3.726039 | val_loss: 3.497880 | BLEU: 0.0878 | Acc: 0.4168 | PPL: 33.0453
+2025-11-03 19:03:15,428 [INFO]: Saving checkpoint: ./checkpoint\checkpoint_epoch_10.pt
+2025-11-03 19:48:00,882 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (1): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (2): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (3): EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (1): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (2): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+      (3): DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 11089020
+2025-11-03 19:59:51,943 [INFO]: Train Epoch: 1 | train_loss: 4.521869 | val_loss: 3.988915 | BLEU: 0.0424 | Acc: 0.3512 | PPL: 53.9963
+2025-11-03 19:59:52,135 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 20:11:12,276 [INFO]: Train Epoch: 2 | train_loss: 4.047177 | val_loss: 3.793430 | BLEU: 0.0588 | Acc: 0.3749 | PPL: 44.4085
+2025-11-03 20:11:12,464 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 20:22:33,691 [INFO]: Train Epoch: 3 | train_loss: 3.937907 | val_loss: 3.700338 | BLEU: 0.0682 | Acc: 0.3863 | PPL: 40.4610
+2025-11-03 20:22:33,885 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 20:33:59,495 [INFO]: Train Epoch: 4 | train_loss: 3.877508 | val_loss: 3.607678 | BLEU: 0.0767 | Acc: 0.4017 | PPL: 36.8803
+2025-11-03 20:33:59,680 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 20:45:20,042 [INFO]: Train Epoch: 5 | train_loss: 3.840884 | val_loss: 3.620800 | BLEU: 0.0788 | Acc: 0.3976 | PPL: 37.3674
+2025-11-03 20:45:20,225 [INFO]: Saving checkpoint: ./checkpoint\checkpoint_epoch_5.pt
+2025-11-03 20:56:40,429 [INFO]: Train Epoch: 6 | train_loss: 3.813133 | val_loss: 3.536656 | BLEU: 0.0838 | Acc: 0.4122 | PPL: 34.3519
+2025-11-03 20:56:40,620 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 21:07:59,697 [INFO]: Train Epoch: 7 | train_loss: 3.791175 | val_loss: 3.526165 | BLEU: 0.0847 | Acc: 0.4134 | PPL: 33.9934
+2025-11-03 21:07:59,892 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 21:19:19,054 [INFO]: Train Epoch: 8 | train_loss: 3.770719 | val_loss: 3.519600 | BLEU: 0.0857 | Acc: 0.4139 | PPL: 33.7709
+2025-11-03 21:19:19,241 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 21:30:35,436 [INFO]: Train Epoch: 9 | train_loss: 3.755696 | val_loss: 3.538455 | BLEU: 0.0836 | Acc: 0.4077 | PPL: 34.4137
+2025-11-03 21:41:51,424 [INFO]: Train Epoch: 10 | train_loss: 3.744133 | val_loss: 3.482307 | BLEU: 0.0893 | Acc: 0.4185 | PPL: 32.5347
+2025-11-03 21:41:51,617 [INFO]: Saving current best: ./checkpoint\model_best.pt
+2025-11-03 21:41:51,799 [INFO]: Saving checkpoint: ./checkpoint\checkpoint_epoch_10.pt
+2025-11-04 15:39:59,297 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-3): 4 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-3): 4 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 11089020
+2025-11-04 15:42:51,405 [INFO]: Train Epoch: 1 | train_loss: 4.530591 | val_loss: 3.966299 | BLEU: 0.0449 | Acc: 0.3568 | PPL: 52.7888
+2025-11-04 15:42:51,650 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 15:42:53,270 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 12771452
+2025-11-04 15:44:35,047 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 12771452
+2025-11-04 15:45:44,420 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-5): 6 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 12771452
+2025-11-04 15:45:57,746 [INFO]: Train Epoch: 2 | train_loss: 4.054445 | val_loss: 3.788254 | BLEU: 0.0586 | Acc: 0.3761 | PPL: 44.1792
+2025-11-04 15:45:57,985 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 15:49:03,010 [INFO]: Train Epoch: 3 | train_loss: 3.935247 | val_loss: 3.708948 | BLEU: 0.0645 | Acc: 0.3851 | PPL: 40.8108
+2025-11-04 15:49:03,275 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 15:49:43,969 [INFO]: Train Epoch: 1 | train_loss: 5.177982 | val_loss: 4.553074 | BLEU: 0.0112 | Acc: 0.2698 | PPL: 94.9237
+2025-11-04 15:49:44,219 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 15:52:03,408 [INFO]: Train Epoch: 4 | train_loss: 3.881037 | val_loss: 3.645124 | BLEU: 0.0698 | Acc: 0.3937 | PPL: 38.2875
+2025-11-04 15:52:03,650 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 15:53:43,580 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 15:53:50,176 [INFO]: Train Epoch: 2 | train_loss: 4.532677 | val_loss: 4.238721 | BLEU: 0.0237 | Acc: 0.3125 | PPL: 69.3191
+2025-11-04 15:53:50,481 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 15:55:20,858 [INFO]: Train Epoch: 5 | train_loss: 3.849702 | val_loss: 3.608519 | BLEU: 0.0722 | Acc: 0.3978 | PPL: 36.9113
+2025-11-04 15:55:21,094 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 15:55:21,317 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_5.pt
+2025-11-04 15:55:53,391 [INFO]: Train Epoch: 1 | train_loss: 4.239452 | val_loss: 3.756605 | BLEU: 0.0597 | Acc: 0.3832 | PPL: 42.8029
+2025-11-04 15:55:53,516 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 15:58:07,854 [INFO]: Train Epoch: 2 | train_loss: 3.856804 | val_loss: 3.585954 | BLEU: 0.0777 | Acc: 0.4038 | PPL: 36.0878
+2025-11-04 15:58:08,045 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 15:58:17,716 [INFO]: Train Epoch: 3 | train_loss: 4.346583 | val_loss: 4.083023 | BLEU: 0.0322 | Acc: 0.3351 | PPL: 59.3245
+2025-11-04 15:58:18,111 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 15:58:46,763 [INFO]: Train Epoch: 6 | train_loss: 3.830288 | val_loss: 3.623330 | BLEU: 0.0715 | Acc: 0.3941 | PPL: 37.4621
+2025-11-04 16:01:02,060 [INFO]: Train Epoch: 3 | train_loss: 3.756637 | val_loss: 3.485632 | BLEU: 0.0877 | Acc: 0.4193 | PPL: 32.6431
+2025-11-04 16:01:47,600 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:03:51,878 [INFO]: Train Epoch: 7 | train_loss: 3.816955 | val_loss: 3.576717 | BLEU: 0.0739 | Acc: 0.4032 | PPL: 35.7560
+2025-11-04 16:03:52,301 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:04:07,029 [INFO]: Train Epoch: 4 | train_loss: 4.259289 | val_loss: 4.010410 | BLEU: 0.0357 | Acc: 0.3404 | PPL: 55.1695
+2025-11-04 16:04:07,346 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:04:43,567 [INFO]: Train Epoch: 4 | train_loss: 3.710812 | val_loss: 3.442877 | BLEU: 0.0890 | Acc: 0.4256 | PPL: 31.2768
+2025-11-04 16:04:43,891 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:07:04,250 [INFO]: Train Epoch: 5 | train_loss: 3.684383 | val_loss: 3.404594 | BLEU: 0.0951 | Acc: 0.4312 | PPL: 30.1021
+2025-11-04 16:07:04,454 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:07:04,633 [INFO]: Saving checkpoint: ./checkpoint/en_de_layer2/checkpoint_epoch_5.pt
+2025-11-04 16:07:12,126 [INFO]: Train Epoch: 8 | train_loss: 3.807209 | val_loss: 3.549515 | BLEU: 0.0762 | Acc: 0.4060 | PPL: 34.7964
+2025-11-04 16:07:12,445 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:08:32,062 [INFO]: Train Epoch: 5 | train_loss: 4.206881 | val_loss: 3.969828 | BLEU: 0.0387 | Acc: 0.3456 | PPL: 52.9754
+2025-11-04 16:08:32,768 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:08:32,994 [INFO]: Saving checkpoint: ./checkpoint/en_de_layer6/checkpoint_epoch_5.pt
+2025-11-04 16:09:21,154 [INFO]: Train Epoch: 6 | train_loss: 3.670574 | val_loss: 3.402305 | BLEU: 0.0954 | Acc: 0.4303 | PPL: 30.0332
+2025-11-04 16:09:21,369 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:10:36,354 [INFO]: Train Epoch: 9 | train_loss: 3.799155 | val_loss: 3.579227 | BLEU: 0.0755 | Acc: 0.4012 | PPL: 35.8458
+2025-11-04 16:11:37,533 [INFO]: Train Epoch: 7 | train_loss: 3.669012 | val_loss: 3.397358 | BLEU: 0.0951 | Acc: 0.4339 | PPL: 29.8850
+2025-11-04 16:11:37,735 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:12:59,727 [INFO]: Train Epoch: 6 | train_loss: 4.176546 | val_loss: 3.926461 | BLEU: 0.0417 | Acc: 0.3509 | PPL: 50.7271
+2025-11-04 16:13:00,054 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:13:54,690 [INFO]: Train Epoch: 8 | train_loss: 3.669480 | val_loss: 3.408901 | BLEU: 0.0953 | Acc: 0.4314 | PPL: 30.2320
+2025-11-04 16:14:01,229 [INFO]: Train Epoch: 10 | train_loss: 3.792659 | val_loss: 3.588129 | BLEU: 0.0748 | Acc: 0.3979 | PPL: 36.1663
+2025-11-04 16:14:01,392 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_10.pt
+2025-11-04 16:15:19,424 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-3): 4 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-3): 4 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.05, inplace=False)
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 11089020
+2025-11-04 16:15:52,772 [INFO]: Train Epoch: 9 | train_loss: 3.668227 | val_loss: 3.387750 | BLEU: 0.0964 | Acc: 0.4350 | PPL: 29.5993
+2025-11-04 16:15:52,949 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:17:19,211 [INFO]: Train Epoch: 7 | train_loss: 4.154715 | val_loss: 3.878625 | BLEU: 0.0438 | Acc: 0.3611 | PPL: 48.3577
+2025-11-04 16:17:19,502 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:18:11,492 [INFO]: Train Epoch: 10 | train_loss: 3.666036 | val_loss: 3.385084 | BLEU: 0.0972 | Acc: 0.4358 | PPL: 29.5205
+2025-11-04 16:18:11,721 [INFO]: Saving current best: ./checkpoint/en_de_layer2/model_best.pt
+2025-11-04 16:18:11,868 [INFO]: Saving checkpoint: ./checkpoint/en_de_layer2/checkpoint_epoch_10.pt
+2025-11-04 16:18:37,010 [INFO]: Train Epoch: 1 | train_loss: 4.235242 | val_loss: 3.705205 | BLEU: 0.0641 | Acc: 0.3850 | PPL: 40.6584
+2025-11-04 16:18:37,225 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:21:32,561 [INFO]: Train Epoch: 8 | train_loss: 4.139851 | val_loss: 3.931442 | BLEU: 0.0425 | Acc: 0.3470 | PPL: 50.9805
+2025-11-04 16:21:39,767 [INFO]: Train Epoch: 2 | train_loss: 3.688595 | val_loss: 3.509618 | BLEU: 0.0808 | Acc: 0.4100 | PPL: 33.4355
+2025-11-04 16:21:40,000 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:28:55,055 [INFO]: Train Epoch: 3 | train_loss: 3.567267 | val_loss: 3.397592 | BLEU: 0.0916 | Acc: 0.4251 | PPL: 29.8920
+2025-11-04 16:28:55,300 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:29:47,436 [INFO]: Train Epoch: 9 | train_loss: 4.128122 | val_loss: 3.861825 | BLEU: 0.0451 | Acc: 0.3624 | PPL: 47.5521
+2025-11-04 16:29:47,949 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:32:56,577 [INFO]: Train Epoch: 4 | train_loss: 3.462849 | val_loss: 3.306345 | BLEU: 0.1025 | Acc: 0.4387 | PPL: 27.2852
+2025-11-04 16:32:56,834 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:33:55,709 [INFO]: Train Epoch: 10 | train_loss: 4.117635 | val_loss: 3.845961 | BLEU: 0.0482 | Acc: 0.3647 | PPL: 46.8036
+2025-11-04 16:33:55,996 [INFO]: Saving current best: ./checkpoint/en_de_layer6/model_best.pt
+2025-11-04 16:33:56,218 [INFO]: Saving checkpoint: ./checkpoint/en_de_layer6/checkpoint_epoch_10.pt
+2025-11-04 16:36:17,455 [INFO]: Train Epoch: 5 | train_loss: 3.396271 | val_loss: 3.246564 | BLEU: 0.1083 | Acc: 0.4467 | PPL: 25.7019
+2025-11-04 16:36:17,710 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:36:17,915 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_5.pt
+2025-11-04 16:36:42,794 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 120)
+    (pe): PositionEmbeddings(200, 120)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=120, out_features=120, bias=True)
+          (fc_k): Linear(in_features=120, out_features=120, bias=True)
+          (fc_v): Linear(in_features=120, out_features=120, bias=True)
+          (fc_o): Linear(in_features=120, out_features=120, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((120,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((120,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=120, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=120, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 120)
+    (pe): PositionEmbeddings(200, 120)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=120, out_features=120, bias=True)
+          (fc_k): Linear(in_features=120, out_features=120, bias=True)
+          (fc_v): Linear(in_features=120, out_features=120, bias=True)
+          (fc_o): Linear(in_features=120, out_features=120, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=120, out_features=120, bias=True)
+          (fc_k): Linear(in_features=120, out_features=120, bias=True)
+          (fc_v): Linear(in_features=120, out_features=120, bias=True)
+          (fc_o): Linear(in_features=120, out_features=120, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=120, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=120, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((120,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((120,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((120,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=120, out_features=12476, bias=True)
+)
+Trainable parameters: 5677204
+2025-11-04 16:37:18,511 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 240)
+    (pe): PositionEmbeddings(200, 240)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=240, out_features=240, bias=True)
+          (fc_k): Linear(in_features=240, out_features=240, bias=True)
+          (fc_v): Linear(in_features=240, out_features=240, bias=True)
+          (fc_o): Linear(in_features=240, out_features=240, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((240,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((240,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=240, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=240, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 240)
+    (pe): PositionEmbeddings(200, 240)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=240, out_features=240, bias=True)
+          (fc_k): Linear(in_features=240, out_features=240, bias=True)
+          (fc_v): Linear(in_features=240, out_features=240, bias=True)
+          (fc_o): Linear(in_features=240, out_features=240, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=240, out_features=240, bias=True)
+          (fc_k): Linear(in_features=240, out_features=240, bias=True)
+          (fc_v): Linear(in_features=240, out_features=240, bias=True)
+          (fc_o): Linear(in_features=240, out_features=240, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=240, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=240, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((240,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((240,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((240,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=240, out_features=12476, bias=True)
+)
+Trainable parameters: 12031084
+2025-11-04 16:38:50,267 [INFO]: Train Epoch: 1 | train_loss: 4.323648 | val_loss: 3.798138 | BLEU: 0.0570 | Acc: 0.3794 | PPL: 44.6180
+2025-11-04 16:38:50,376 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:39:32,365 [INFO]: Train Epoch: 6 | train_loss: 3.359141 | val_loss: 3.220511 | BLEU: 0.1116 | Acc: 0.4511 | PPL: 25.0409
+2025-11-04 16:39:32,613 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:39:32,772 [INFO]: Train Epoch: 1 | train_loss: 4.220516 | val_loss: 3.745802 | BLEU: 0.0612 | Acc: 0.3830 | PPL: 42.3429
+2025-11-04 16:39:32,940 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:41:06,329 [INFO]: Train Epoch: 2 | train_loss: 3.925539 | val_loss: 3.628992 | BLEU: 0.0737 | Acc: 0.4025 | PPL: 37.6748
+2025-11-04 16:41:06,473 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:41:45,873 [INFO]: Train Epoch: 2 | train_loss: 3.845820 | val_loss: 3.567882 | BLEU: 0.0775 | Acc: 0.4076 | PPL: 35.4414
+2025-11-04 16:41:46,068 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:42:57,968 [INFO]: Train Epoch: 7 | train_loss: 3.333553 | val_loss: 3.195342 | BLEU: 0.1131 | Acc: 0.4539 | PPL: 24.4185
+2025-11-04 16:42:58,229 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:43:16,247 [INFO]: Train Epoch: 3 | train_loss: 3.824042 | val_loss: 3.513889 | BLEU: 0.0838 | Acc: 0.4163 | PPL: 33.5786
+2025-11-04 16:43:16,353 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:43:59,877 [INFO]: Train Epoch: 3 | train_loss: 3.741470 | val_loss: 3.469848 | BLEU: 0.0883 | Acc: 0.4210 | PPL: 32.1319
+2025-11-04 16:44:00,127 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:45:31,163 [INFO]: Train Epoch: 4 | train_loss: 3.762904 | val_loss: 3.462893 | BLEU: 0.0935 | Acc: 0.4257 | PPL: 31.9091
+2025-11-04 16:45:31,309 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:46:14,249 [INFO]: Train Epoch: 4 | train_loss: 3.684665 | val_loss: 3.420963 | BLEU: 0.0963 | Acc: 0.4300 | PPL: 30.5989
+2025-11-04 16:46:14,528 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:46:15,739 [INFO]: Train Epoch: 8 | train_loss: 3.314218 | val_loss: 3.179575 | BLEU: 0.1158 | Acc: 0.4574 | PPL: 24.0365
+2025-11-04 16:46:15,981 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:47:48,619 [INFO]: Train Epoch: 5 | train_loss: 3.734332 | val_loss: 3.437607 | BLEU: 0.0946 | Acc: 0.4300 | PPL: 31.1124
+2025-11-04 16:47:48,748 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:47:48,876 [INFO]: Saving checkpoint: ./checkpoint/h_dim120/checkpoint_epoch_5.pt
+2025-11-04 16:48:28,279 [INFO]: Train Epoch: 5 | train_loss: 3.647149 | val_loss: 3.376115 | BLEU: 0.1008 | Acc: 0.4369 | PPL: 29.2569
+2025-11-04 16:48:28,525 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:48:28,724 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_5.pt
+2025-11-04 16:49:39,592 [INFO]: Train Epoch: 9 | train_loss: 3.299843 | val_loss: 3.155231 | BLEU: 0.1177 | Acc: 0.4613 | PPL: 23.4585
+2025-11-04 16:49:39,812 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:50:06,432 [INFO]: Train Epoch: 6 | train_loss: 3.721235 | val_loss: 3.414679 | BLEU: 0.0984 | Acc: 0.4349 | PPL: 30.4072
+2025-11-04 16:50:06,565 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:50:40,065 [INFO]: Train Epoch: 6 | train_loss: 3.628382 | val_loss: 3.370896 | BLEU: 0.1035 | Acc: 0.4390 | PPL: 29.1046
+2025-11-04 16:50:40,590 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:52:16,693 [INFO]: Train Epoch: 7 | train_loss: 3.707722 | val_loss: 3.401705 | BLEU: 0.0995 | Acc: 0.4374 | PPL: 30.0152
+2025-11-04 16:52:16,834 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:52:16,949 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.05, inplace=False)
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 16:52:52,591 [INFO]: Train Epoch: 7 | train_loss: 3.622399 | val_loss: 3.372611 | BLEU: 0.1027 | Acc: 0.4402 | PPL: 29.1545
+2025-11-04 16:54:23,751 [INFO]: Train Epoch: 1 | train_loss: 3.951615 | val_loss: 3.458710 | BLEU: 0.0883 | Acc: 0.4209 | PPL: 31.7760
+2025-11-04 16:54:23,978 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:54:28,610 [INFO]: Train Epoch: 8 | train_loss: 3.697657 | val_loss: 3.390579 | BLEU: 0.0990 | Acc: 0.4388 | PPL: 29.6831
+2025-11-04 16:54:28,753 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:55:10,987 [INFO]: Train Epoch: 8 | train_loss: 3.617856 | val_loss: 3.333438 | BLEU: 0.1059 | Acc: 0.4445 | PPL: 28.0345
+2025-11-04 16:55:11,230 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:56:35,159 [INFO]: Train Epoch: 2 | train_loss: 3.431560 | val_loss: 3.242403 | BLEU: 0.1149 | Acc: 0.4517 | PPL: 25.5951
+2025-11-04 16:56:35,391 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:56:40,527 [INFO]: Train Epoch: 9 | train_loss: 3.690673 | val_loss: 3.388917 | BLEU: 0.1011 | Acc: 0.4388 | PPL: 29.6339
+2025-11-04 16:56:40,647 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:57:28,224 [INFO]: Train Epoch: 9 | train_loss: 3.608197 | val_loss: 3.326271 | BLEU: 0.1089 | Acc: 0.4477 | PPL: 27.8344
+2025-11-04 16:57:28,451 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-04 16:58:44,954 [INFO]: Train Epoch: 3 | train_loss: 3.300399 | val_loss: 3.162472 | BLEU: 0.1261 | Acc: 0.4629 | PPL: 23.6289
+2025-11-04 16:58:45,183 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 16:58:53,186 [INFO]: Train Epoch: 10 | train_loss: 3.687180 | val_loss: 3.380795 | BLEU: 0.1027 | Acc: 0.4406 | PPL: 29.3941
+2025-11-04 16:58:53,307 [INFO]: Saving current best: ./checkpoint/h_dim120/model_best.pt
+2025-11-04 16:58:53,402 [INFO]: Saving checkpoint: ./checkpoint/h_dim120/checkpoint_epoch_10.pt
+2025-11-04 16:59:37,119 [INFO]: Train Epoch: 10 | train_loss: 3.599013 | val_loss: 3.328586 | BLEU: 0.1090 | Acc: 0.4472 | PPL: 27.8989
+2025-11-04 16:59:37,306 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_10.pt
+2025-11-04 17:00:35,333 [INFO]: Train Epoch: 4 | train_loss: 3.240829 | val_loss: 3.103542 | BLEU: 0.1318 | Acc: 0.4721 | PPL: 22.2767
+2025-11-04 17:00:35,502 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:02:22,342 [INFO]: Train Epoch: 5 | train_loss: 3.209631 | val_loss: 3.081265 | BLEU: 0.1339 | Acc: 0.4762 | PPL: 21.7860
+2025-11-04 17:02:22,537 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:02:22,745 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_5.pt
+2025-11-04 17:04:11,203 [INFO]: Train Epoch: 6 | train_loss: 3.193402 | val_loss: 3.074349 | BLEU: 0.1358 | Acc: 0.4766 | PPL: 21.6358
+2025-11-04 17:04:11,472 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:06:03,522 [INFO]: Train Epoch: 7 | train_loss: 3.183241 | val_loss: 3.061856 | BLEU: 0.1370 | Acc: 0.4798 | PPL: 21.3672
+2025-11-04 17:06:03,725 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:07:52,391 [INFO]: Train Epoch: 8 | train_loss: 3.176139 | val_loss: 3.046752 | BLEU: 0.1395 | Acc: 0.4835 | PPL: 21.0469
+2025-11-04 17:07:52,629 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:09:39,335 [INFO]: Train Epoch: 9 | train_loss: 3.171583 | val_loss: 3.043014 | BLEU: 0.1390 | Acc: 0.4829 | PPL: 20.9683
+2025-11-04 17:09:39,515 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:11:24,482 [INFO]: Train Epoch: 10 | train_loss: 3.167261 | val_loss: 3.034938 | BLEU: 0.1407 | Acc: 0.4840 | PPL: 20.7997
+2025-11-04 17:11:24,682 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:11:24,831 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_10.pt
+2025-11-04 17:12:03,083 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.05, inplace=False)
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 17:12:12,540 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.1, inplace=False)
+        (ff_dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.1, inplace=False)
+        (attention_dropout): Dropout(p=0.1, inplace=False)
+        (ff_dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 17:13:25,614 [INFO]: Train Epoch: 11 | train_loss: 3.161005 | val_loss: 3.035709 | BLEU: 0.1398 | Acc: 0.4838 | PPL: 20.8157
+2025-11-04 17:14:13,936 [INFO]: Train Epoch: 1 | train_loss: 3.951615 | val_loss: 3.458710 | BLEU: 0.0883 | Acc: 0.4209 | PPL: 31.7760
+2025-11-04 17:14:14,115 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:14:24,205 [INFO]: Train Epoch: 1 | train_loss: 4.051583 | val_loss: 3.581084 | BLEU: 0.0784 | Acc: 0.4027 | PPL: 35.9125
+2025-11-04 17:14:24,379 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:15:38,948 [INFO]: Train Epoch: 12 | train_loss: 3.157203 | val_loss: 3.037961 | BLEU: 0.1410 | Acc: 0.4846 | PPL: 20.8627
+2025-11-04 17:16:25,371 [INFO]: Train Epoch: 2 | train_loss: 3.431560 | val_loss: 3.242403 | BLEU: 0.1149 | Acc: 0.4517 | PPL: 25.5951
+2025-11-04 17:16:25,572 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:16:34,067 [INFO]: Train Epoch: 2 | train_loss: 3.584635 | val_loss: 3.347361 | BLEU: 0.1036 | Acc: 0.4371 | PPL: 28.4276
+2025-11-04 17:16:34,260 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:17:52,536 [INFO]: Train Epoch: 13 | train_loss: 3.154117 | val_loss: 3.024300 | BLEU: 0.1395 | Acc: 0.4859 | PPL: 20.5796
+2025-11-04 17:17:52,745 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:18:37,625 [INFO]: Train Epoch: 3 | train_loss: 3.300399 | val_loss: 3.162472 | BLEU: 0.1261 | Acc: 0.4629 | PPL: 23.6289
+2025-11-04 17:18:37,824 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:18:47,642 [INFO]: Train Epoch: 3 | train_loss: 3.462535 | val_loss: 3.248696 | BLEU: 0.1139 | Acc: 0.4515 | PPL: 25.7567
+2025-11-04 17:18:47,903 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:20:04,838 [INFO]: Train Epoch: 14 | train_loss: 3.150156 | val_loss: 3.034770 | BLEU: 0.1408 | Acc: 0.4844 | PPL: 20.7962
+2025-11-04 17:20:49,149 [INFO]: Train Epoch: 4 | train_loss: 3.240829 | val_loss: 3.103542 | BLEU: 0.1318 | Acc: 0.4721 | PPL: 22.2767
+2025-11-04 17:20:49,388 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:20:54,797 [INFO]: Train Epoch: 4 | train_loss: 3.409466 | val_loss: 3.201896 | BLEU: 0.1188 | Acc: 0.4589 | PPL: 24.5791
+2025-11-04 17:20:55,030 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:22:17,923 [INFO]: Train Epoch: 15 | train_loss: 3.146316 | val_loss: 3.027365 | BLEU: 0.1429 | Acc: 0.4869 | PPL: 20.6428
+2025-11-04 17:22:18,130 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_15.pt
+2025-11-04 17:23:00,272 [INFO]: Train Epoch: 5 | train_loss: 3.209631 | val_loss: 3.081265 | BLEU: 0.1339 | Acc: 0.4762 | PPL: 21.7860
+2025-11-04 17:23:00,485 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:23:00,631 [INFO]: Saving checkpoint: ./checkpoint/drop0.05/checkpoint_epoch_5.pt
+2025-11-04 17:23:07,148 [INFO]: Train Epoch: 5 | train_loss: 3.381124 | val_loss: 3.183980 | BLEU: 0.1225 | Acc: 0.4631 | PPL: 24.1426
+2025-11-04 17:23:07,338 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:23:07,505 [INFO]: Saving checkpoint: ./checkpoint/drop0.1/checkpoint_epoch_5.pt
+2025-11-04 17:24:31,267 [INFO]: Train Epoch: 16 | train_loss: 3.144055 | val_loss: 3.014468 | BLEU: 0.1439 | Acc: 0.4884 | PPL: 20.3783
+2025-11-04 17:24:31,472 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:25:13,371 [INFO]: Train Epoch: 6 | train_loss: 3.193402 | val_loss: 3.074349 | BLEU: 0.1358 | Acc: 0.4766 | PPL: 21.6358
+2025-11-04 17:25:13,601 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:25:22,928 [INFO]: Train Epoch: 6 | train_loss: 3.367797 | val_loss: 3.169885 | BLEU: 0.1247 | Acc: 0.4654 | PPL: 23.8047
+2025-11-04 17:25:23,112 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:26:41,285 [INFO]: Train Epoch: 17 | train_loss: 3.142022 | val_loss: 3.018956 | BLEU: 0.1423 | Acc: 0.4869 | PPL: 20.4699
+2025-11-04 17:27:29,122 [INFO]: Train Epoch: 7 | train_loss: 3.183241 | val_loss: 3.061856 | BLEU: 0.1370 | Acc: 0.4798 | PPL: 21.3672
+2025-11-04 17:27:29,309 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:27:35,977 [INFO]: Train Epoch: 7 | train_loss: 3.353581 | val_loss: 3.140285 | BLEU: 0.1279 | Acc: 0.4700 | PPL: 23.1105
+2025-11-04 17:27:36,192 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:29:09,929 [INFO]: Train Epoch: 18 | train_loss: 3.140916 | val_loss: 3.020886 | BLEU: 0.1434 | Acc: 0.4884 | PPL: 20.5095
+2025-11-04 17:29:56,614 [INFO]: Train Epoch: 8 | train_loss: 3.176139 | val_loss: 3.046752 | BLEU: 0.1395 | Acc: 0.4835 | PPL: 21.0469
+2025-11-04 17:29:56,807 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:30:08,644 [INFO]: Train Epoch: 8 | train_loss: 3.343407 | val_loss: 3.145539 | BLEU: 0.1285 | Acc: 0.4698 | PPL: 23.2322
+2025-11-04 17:31:23,159 [INFO]: Train Epoch: 19 | train_loss: 3.139221 | val_loss: 3.005120 | BLEU: 0.1445 | Acc: 0.4906 | PPL: 20.1886
+2025-11-04 17:31:23,347 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:32:09,706 [INFO]: Train Epoch: 9 | train_loss: 3.171583 | val_loss: 3.043014 | BLEU: 0.1390 | Acc: 0.4829 | PPL: 20.9683
+2025-11-04 17:32:09,906 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:32:20,197 [INFO]: Train Epoch: 9 | train_loss: 3.338532 | val_loss: 3.144327 | BLEU: 0.1285 | Acc: 0.4698 | PPL: 23.2041
+2025-11-04 17:33:35,553 [INFO]: Train Epoch: 20 | train_loss: 3.137827 | val_loss: 3.021610 | BLEU: 0.1409 | Acc: 0.4861 | PPL: 20.5243
+2025-11-04 17:33:35,708 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_20.pt
+2025-11-04 17:34:24,547 [INFO]: Train Epoch: 10 | train_loss: 3.167261 | val_loss: 3.034938 | BLEU: 0.1407 | Acc: 0.4840 | PPL: 20.7997
+2025-11-04 17:34:24,745 [INFO]: Saving current best: ./checkpoint/drop0.05/model_best.pt
+2025-11-04 17:34:24,917 [INFO]: Saving checkpoint: ./checkpoint/drop0.05/checkpoint_epoch_10.pt
+2025-11-04 17:34:31,506 [INFO]: Train Epoch: 10 | train_loss: 3.335758 | val_loss: 3.132200 | BLEU: 0.1289 | Acc: 0.4720 | PPL: 22.9244
+2025-11-04 17:34:31,715 [INFO]: Saving current best: ./checkpoint/drop0.1/model_best.pt
+2025-11-04 17:34:31,877 [INFO]: Saving checkpoint: ./checkpoint/drop0.1/checkpoint_epoch_10.pt
+2025-11-04 17:35:33,023 [INFO]: Train Epoch: 21 | train_loss: 3.137143 | val_loss: 3.015661 | BLEU: 0.1421 | Acc: 0.4878 | PPL: 20.4026
+2025-11-04 17:35:48,951 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.05, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.05, inplace=False)
+        (attention_dropout): Dropout(p=0.05, inplace=False)
+        (ff_dropout): Dropout(p=0.05, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.05, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 17:37:25,984 [INFO]: Train Epoch: 22 | train_loss: 3.136019 | val_loss: 3.020783 | BLEU: 0.1404 | Acc: 0.4868 | PPL: 20.5073
+2025-11-04 17:37:40,625 [INFO]: Train Epoch: 1 | train_loss: 3.951615 | val_loss: 3.458710 | BLEU: 0.0883 | Acc: 0.4209 | PPL: 31.7760
+2025-11-04 17:37:40,773 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:39:17,966 [INFO]: Train Epoch: 23 | train_loss: 3.135674 | val_loss: 3.014669 | BLEU: 0.1430 | Acc: 0.4880 | PPL: 20.3824
+2025-11-04 17:39:33,027 [INFO]: Train Epoch: 2 | train_loss: 3.431560 | val_loss: 3.242403 | BLEU: 0.1149 | Acc: 0.4517 | PPL: 25.5951
+2025-11-04 17:39:33,267 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:41:16,194 [INFO]: Train Epoch: 24 | train_loss: 3.134523 | val_loss: 3.002707 | BLEU: 0.1443 | Acc: 0.4905 | PPL: 20.1400
+2025-11-04 17:41:16,406 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:41:27,686 [INFO]: Train Epoch: 3 | train_loss: 3.300399 | val_loss: 3.162472 | BLEU: 0.1261 | Acc: 0.4629 | PPL: 23.6289
+2025-11-04 17:41:27,917 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:43:13,298 [INFO]: Train Epoch: 25 | train_loss: 3.133587 | val_loss: 3.007244 | BLEU: 0.1422 | Acc: 0.4894 | PPL: 20.2316
+2025-11-04 17:43:13,465 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_25.pt
+2025-11-04 17:43:23,661 [INFO]: Train Epoch: 4 | train_loss: 3.240829 | val_loss: 3.103542 | BLEU: 0.1318 | Acc: 0.4721 | PPL: 22.2767
+2025-11-04 17:43:23,859 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:45:11,009 [INFO]: Train Epoch: 26 | train_loss: 3.132935 | val_loss: 3.009686 | BLEU: 0.1433 | Acc: 0.4887 | PPL: 20.2810
+2025-11-04 17:45:17,999 [INFO]: Train Epoch: 5 | train_loss: 3.209631 | val_loss: 3.081265 | BLEU: 0.1339 | Acc: 0.4762 | PPL: 21.7860
+2025-11-04 17:45:18,192 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:45:18,366 [INFO]: Saving checkpoint: ./checkpoint/drop0.3/checkpoint_epoch_5.pt
+2025-11-04 17:45:58,100 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-04 17:47:16,009 [INFO]: Train Epoch: 27 | train_loss: 3.133079 | val_loss: 3.001842 | BLEU: 0.1451 | Acc: 0.4910 | PPL: 20.1226
+2025-11-04 17:47:16,234 [INFO]: Saving current best: ./checkpoint/basetest/model_best.pt
+2025-11-04 17:47:22,857 [INFO]: Train Epoch: 6 | train_loss: 3.193402 | val_loss: 3.074349 | BLEU: 0.1358 | Acc: 0.4766 | PPL: 21.6358
+2025-11-04 17:47:23,037 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:48:04,522 [INFO]: Train Epoch: 1 | train_loss: 4.363632 | val_loss: 3.884648 | BLEU: 0.0493 | Acc: 0.3589 | PPL: 48.6498
+2025-11-04 17:48:04,718 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:49:27,555 [INFO]: Train Epoch: 28 | train_loss: 3.132810 | val_loss: 3.005008 | BLEU: 0.1451 | Acc: 0.4902 | PPL: 20.1864
+2025-11-04 17:49:33,465 [INFO]: Train Epoch: 7 | train_loss: 3.183241 | val_loss: 3.061856 | BLEU: 0.1370 | Acc: 0.4798 | PPL: 21.3672
+2025-11-04 17:49:33,677 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:50:07,080 [INFO]: Train Epoch: 2 | train_loss: 4.041353 | val_loss: 3.751837 | BLEU: 0.0552 | Acc: 0.3779 | PPL: 42.5993
+2025-11-04 17:50:07,260 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:51:41,280 [INFO]: Train Epoch: 29 | train_loss: 3.132687 | val_loss: 3.003914 | BLEU: 0.1437 | Acc: 0.4900 | PPL: 20.1643
+2025-11-04 17:51:47,803 [INFO]: Train Epoch: 8 | train_loss: 3.176139 | val_loss: 3.046752 | BLEU: 0.1395 | Acc: 0.4835 | PPL: 21.0469
+2025-11-04 17:51:48,019 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:52:09,714 [INFO]: Train Epoch: 3 | train_loss: 3.982511 | val_loss: 3.683131 | BLEU: 0.0641 | Acc: 0.3875 | PPL: 39.7707
+2025-11-04 17:52:09,952 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:53:55,403 [INFO]: Train Epoch: 30 | train_loss: 3.132730 | val_loss: 3.004197 | BLEU: 0.1450 | Acc: 0.4906 | PPL: 20.1700
+2025-11-04 17:53:55,571 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_30.pt
+2025-11-04 17:54:01,662 [INFO]: Train Epoch: 9 | train_loss: 3.171583 | val_loss: 3.043014 | BLEU: 0.1390 | Acc: 0.4829 | PPL: 20.9683
+2025-11-04 17:54:01,873 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:54:14,219 [INFO]: Train Epoch: 4 | train_loss: 3.954369 | val_loss: 3.642837 | BLEU: 0.0694 | Acc: 0.3942 | PPL: 38.2001
+2025-11-04 17:54:14,408 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:56:06,584 [INFO]: Train Epoch: 31 | train_loss: 3.132157 | val_loss: 3.003371 | BLEU: 0.1430 | Acc: 0.4897 | PPL: 20.1534
+2025-11-04 17:56:10,535 [INFO]: Train Epoch: 10 | train_loss: 3.167261 | val_loss: 3.034938 | BLEU: 0.1407 | Acc: 0.4840 | PPL: 20.7997
+2025-11-04 17:56:10,810 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-04 17:56:10,935 [INFO]: Saving checkpoint: ./checkpoint/drop0.3/checkpoint_epoch_10.pt
+2025-11-04 17:56:16,016 [INFO]: Train Epoch: 5 | train_loss: 3.934906 | val_loss: 3.612273 | BLEU: 0.0707 | Acc: 0.3992 | PPL: 37.0502
+2025-11-04 17:56:16,176 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:56:16,299 [INFO]: Saving checkpoint: ./checkpoint/head1/checkpoint_epoch_5.pt
+2025-11-04 17:57:58,340 [INFO]: Train Epoch: 32 | train_loss: 3.132558 | val_loss: 3.002391 | BLEU: 0.1428 | Acc: 0.4903 | PPL: 20.1336
+2025-11-04 17:58:04,628 [INFO]: Train Epoch: 6 | train_loss: 3.922129 | val_loss: 3.591016 | BLEU: 0.0740 | Acc: 0.4022 | PPL: 36.2709
+2025-11-04 17:58:04,818 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 17:59:52,523 [INFO]: Train Epoch: 33 | train_loss: 3.133275 | val_loss: 3.007384 | BLEU: 0.1450 | Acc: 0.4905 | PPL: 20.2344
+2025-11-04 17:59:54,869 [INFO]: Train Epoch: 7 | train_loss: 3.912127 | val_loss: 3.585583 | BLEU: 0.0717 | Acc: 0.4022 | PPL: 36.0744
+2025-11-04 17:59:55,091 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 18:01:43,522 [INFO]: Train Epoch: 8 | train_loss: 3.908088 | val_loss: 3.573887 | BLEU: 0.0759 | Acc: 0.4055 | PPL: 35.6549
+2025-11-04 18:01:43,702 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 18:01:48,055 [INFO]: Train Epoch: 34 | train_loss: 3.132684 | val_loss: 3.015143 | BLEU: 0.1437 | Acc: 0.4889 | PPL: 20.3920
+2025-11-04 18:03:30,772 [INFO]: Train Epoch: 9 | train_loss: 3.900627 | val_loss: 3.572177 | BLEU: 0.0758 | Acc: 0.4065 | PPL: 35.5940
+2025-11-04 18:03:30,975 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 18:03:43,722 [INFO]: Train Epoch: 35 | train_loss: 3.131990 | val_loss: 3.005137 | BLEU: 0.1429 | Acc: 0.4899 | PPL: 20.1890
+2025-11-04 18:03:43,901 [INFO]: Saving checkpoint: ./checkpoint/basetest/checkpoint_epoch_35.pt
+2025-11-04 18:06:50,932 [INFO]: Train Epoch: 10 | train_loss: 3.898757 | val_loss: 3.557725 | BLEU: 0.0784 | Acc: 0.4090 | PPL: 35.0833
+2025-11-04 18:06:51,161 [INFO]: Saving current best: ./checkpoint/head1/model_best.pt
+2025-11-04 18:06:51,308 [INFO]: Saving checkpoint: ./checkpoint/head1/checkpoint_epoch_10.pt
+2025-11-04 18:07:49,909 [INFO]: Train Epoch: 36 | train_loss: 3.131645 | val_loss: 3.015112 | BLEU: 0.1422 | Acc: 0.4875 | PPL: 20.3914
+2025-11-04 18:11:10,032 [INFO]: Train Epoch: 37 | train_loss: 3.131063 | val_loss: 3.006401 | BLEU: 0.1440 | Acc: 0.4905 | PPL: 20.2145
+2025-11-04 18:11:10,032 [INFO]: Early stopping at epoch 37
+2025-11-05 15:34:36,441 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.3, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.3, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.3, inplace=False)
+        (ff_dropout): Dropout(p=0.3, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.3, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.3, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.3, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.3, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.3, inplace=False)
+        (attention_dropout): Dropout(p=0.3, inplace=False)
+        (ff_dropout): Dropout(p=0.3, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.3, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-05 15:37:48,791 [INFO]: Train Epoch: 1 | train_loss: 4.412652 | val_loss: 3.913934 | BLEU: 0.0492 | Acc: 0.3669 | PPL: 50.0957
+2025-11-05 15:37:48,953 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:41:02,124 [INFO]: Train Epoch: 2 | train_loss: 4.061247 | val_loss: 3.771201 | BLEU: 0.0602 | Acc: 0.3839 | PPL: 43.4322
+2025-11-05 15:41:02,298 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:44:14,189 [INFO]: Train Epoch: 3 | train_loss: 3.986339 | val_loss: 3.694298 | BLEU: 0.0682 | Acc: 0.3935 | PPL: 40.2173
+2025-11-05 15:44:14,368 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:47:26,736 [INFO]: Train Epoch: 4 | train_loss: 3.948153 | val_loss: 3.666450 | BLEU: 0.0722 | Acc: 0.3982 | PPL: 39.1128
+2025-11-05 15:47:26,925 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:51:29,780 [INFO]: Train Epoch: 5 | train_loss: 3.928775 | val_loss: 3.630839 | BLEU: 0.0727 | Acc: 0.4020 | PPL: 37.7445
+2025-11-05 15:51:29,972 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:51:30,118 [INFO]: Saving checkpoint: ./checkpoint/drop0.3/checkpoint_epoch_5.pt
+2025-11-05 15:54:31,484 [INFO]: Train Epoch: 6 | train_loss: 3.914096 | val_loss: 3.613439 | BLEU: 0.0751 | Acc: 0.4067 | PPL: 37.0934
+2025-11-05 15:54:31,675 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 15:57:39,209 [INFO]: Train Epoch: 7 | train_loss: 3.905193 | val_loss: 3.613834 | BLEU: 0.0742 | Acc: 0.4050 | PPL: 37.1080
+2025-11-05 16:00:29,163 [INFO]: Train Epoch: 8 | train_loss: 3.907716 | val_loss: 3.596566 | BLEU: 0.0759 | Acc: 0.4076 | PPL: 36.4728
+2025-11-05 16:00:29,363 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 16:03:24,970 [INFO]: Train Epoch: 9 | train_loss: 3.908896 | val_loss: 3.595485 | BLEU: 0.0773 | Acc: 0.4093 | PPL: 36.4334
+2025-11-05 16:03:25,168 [INFO]: Saving current best: ./checkpoint/drop0.3/model_best.pt
+2025-11-05 16:06:36,663 [INFO]: Train Epoch: 10 | train_loss: 3.909917 | val_loss: 3.595630 | BLEU: 0.0754 | Acc: 0.4090 | PPL: 36.4387
+2025-11-05 16:06:36,819 [INFO]: Saving checkpoint: ./checkpoint/drop0.3/checkpoint_epoch_10.pt
+2025-11-06 15:24:18,600 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=14813, bias=True)
+)
+Trainable parameters: 9857629
+2025-11-06 15:27:31,261 [INFO]: Train Epoch: 1 | train_loss: 4.419202 | val_loss: 3.881738 | BLEU: 0.0398 | Acc: 0.3642 | PPL: 48.5085
+2025-11-06 15:27:31,443 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:29:51,268 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-06 15:30:40,238 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-06 15:30:46,870 [INFO]: Train Epoch: 2 | train_loss: 3.981424 | val_loss: 3.662396 | BLEU: 0.0555 | Acc: 0.3933 | PPL: 38.9546
+2025-11-06 15:30:47,065 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:32:25,572 [INFO]: Train Epoch: 1 | train_loss: 4.205213 | val_loss: 3.611218 | BLEU: 0.0730 | Acc: 0.3963 | PPL: 37.0111
+2025-11-06 15:32:25,741 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:34:01,494 [INFO]: Train Epoch: 3 | train_loss: 3.865726 | val_loss: 3.554246 | BLEU: 0.0663 | Acc: 0.4098 | PPL: 34.9614
+2025-11-06 15:34:01,654 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:34:10,645 [INFO]: Train Epoch: 2 | train_loss: 3.671800 | val_loss: 3.345003 | BLEU: 0.1027 | Acc: 0.4350 | PPL: 28.3607
+2025-11-06 15:34:10,797 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:36:43,328 [INFO]: Train Epoch: 1 | train_loss: 4.362664 | val_loss: 3.958368 | BLEU: 0.0459 | Acc: 0.3642 | PPL: 52.3718
+2025-11-06 15:36:43,454 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 15:36:44,993 [INFO]: Train Epoch: 3 | train_loss: 3.521307 | val_loss: 3.231617 | BLEU: 0.1160 | Acc: 0.4506 | PPL: 25.3206
+2025-11-06 15:36:45,188 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:38:16,070 [INFO]: Train Epoch: 4 | train_loss: 3.813431 | val_loss: 3.498600 | BLEU: 0.0686 | Acc: 0.4164 | PPL: 33.0691
+2025-11-06 15:38:16,264 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:38:33,408 [INFO]: Train Epoch: 4 | train_loss: 3.445997 | val_loss: 3.165067 | BLEU: 0.1229 | Acc: 0.4599 | PPL: 23.6903
+2025-11-06 15:38:33,598 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:40:20,979 [INFO]: Train Epoch: 5 | train_loss: 3.405274 | val_loss: 3.121396 | BLEU: 0.1279 | Acc: 0.4658 | PPL: 22.6780
+2025-11-06 15:40:21,168 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:40:21,314 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_5.pt
+2025-11-06 15:41:36,224 [INFO]: Train Epoch: 5 | train_loss: 3.779942 | val_loss: 3.457841 | BLEU: 0.0766 | Acc: 0.4243 | PPL: 31.7484
+2025-11-06 15:41:36,413 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:41:36,568 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_5.pt
+2025-11-06 15:42:08,221 [INFO]: Train Epoch: 6 | train_loss: 3.386324 | val_loss: 3.106001 | BLEU: 0.1306 | Acc: 0.4683 | PPL: 22.3316
+2025-11-06 15:42:08,356 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:42:59,514 [INFO]: Train Epoch: 2 | train_loss: 4.084894 | val_loss: 3.831711 | BLEU: 0.0555 | Acc: 0.3802 | PPL: 46.1414
+2025-11-06 15:42:59,647 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 15:43:53,776 [INFO]: Train Epoch: 7 | train_loss: 3.376339 | val_loss: 3.091967 | BLEU: 0.1343 | Acc: 0.4710 | PPL: 22.0204
+2025-11-06 15:43:53,910 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:44:56,008 [INFO]: Train Epoch: 6 | train_loss: 3.761919 | val_loss: 3.436188 | BLEU: 0.0770 | Acc: 0.4272 | PPL: 31.0683
+2025-11-06 15:44:56,200 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:45:39,745 [INFO]: Train Epoch: 8 | train_loss: 3.366488 | val_loss: 3.086682 | BLEU: 0.1319 | Acc: 0.4730 | PPL: 21.9043
+2025-11-06 15:45:39,940 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:47:20,951 [INFO]: Train Epoch: 9 | train_loss: 3.357406 | val_loss: 3.061651 | BLEU: 0.1356 | Acc: 0.4766 | PPL: 21.3628
+2025-11-06 15:47:21,094 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:48:02,717 [INFO]: Train Epoch: 7 | train_loss: 3.756397 | val_loss: 3.440779 | BLEU: 0.0775 | Acc: 0.4273 | PPL: 31.2113
+2025-11-06 15:48:39,193 [INFO]: Train Epoch: 3 | train_loss: 4.023835 | val_loss: 3.774609 | BLEU: 0.0598 | Acc: 0.3896 | PPL: 43.5805
+2025-11-06 15:48:39,325 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 15:49:04,281 [INFO]: Train Epoch: 10 | train_loss: 3.346505 | val_loss: 3.051961 | BLEU: 0.1377 | Acc: 0.4791 | PPL: 21.1568
+2025-11-06 15:49:04,425 [INFO]: Saving current best: ./checkpoint/model_best.pt
+2025-11-06 15:49:04,544 [INFO]: Saving checkpoint: ./checkpoint/checkpoint_epoch_10.pt
+2025-11-06 15:51:01,522 [INFO]: Train Epoch: 8 | train_loss: 3.750513 | val_loss: 3.443170 | BLEU: 0.0755 | Acc: 0.4272 | PPL: 31.2860
+2025-11-06 15:53:46,387 [INFO]: Train Epoch: 4 | train_loss: 3.991595 | val_loss: 3.738638 | BLEU: 0.0659 | Acc: 0.3946 | PPL: 42.0407
+2025-11-06 15:53:46,527 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 15:53:54,922 [INFO]: Train Epoch: 9 | train_loss: 3.747498 | val_loss: 3.430544 | BLEU: 0.0776 | Acc: 0.4272 | PPL: 30.8934
+2025-11-06 15:53:55,116 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:56:59,860 [INFO]: Train Epoch: 10 | train_loss: 3.742796 | val_loss: 3.416575 | BLEU: 0.0793 | Acc: 0.4311 | PPL: 30.4649
+2025-11-06 15:57:00,066 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 15:57:00,234 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_10.pt
+2025-11-06 15:59:03,113 [INFO]: Train Epoch: 5 | train_loss: 3.971514 | val_loss: 3.707866 | BLEU: 0.0682 | Acc: 0.3989 | PPL: 40.7667
+2025-11-06 15:59:03,245 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 15:59:03,370 [INFO]: Saving checkpoint: ./checkpoint/batchsize16/checkpoint_epoch_5.pt
+2025-11-06 15:59:51,357 [INFO]: Train Epoch: 11 | train_loss: 3.733385 | val_loss: 3.411027 | BLEU: 0.0794 | Acc: 0.4333 | PPL: 30.2963
+2025-11-06 15:59:51,502 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:02:59,030 [INFO]: Train Epoch: 12 | train_loss: 3.726813 | val_loss: 3.404105 | BLEU: 0.0807 | Acc: 0.4347 | PPL: 30.0874
+2025-11-06 16:02:59,223 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:04:38,245 [INFO]: Train Epoch: 6 | train_loss: 3.959664 | val_loss: 3.703940 | BLEU: 0.0670 | Acc: 0.4003 | PPL: 40.6070
+2025-11-06 16:04:38,429 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 16:05:58,963 [INFO]: Train Epoch: 13 | train_loss: 3.721524 | val_loss: 3.423152 | BLEU: 0.0780 | Acc: 0.4315 | PPL: 30.6659
+2025-11-06 16:09:11,394 [INFO]: Train Epoch: 14 | train_loss: 3.717386 | val_loss: 3.389835 | BLEU: 0.0817 | Acc: 0.4366 | PPL: 29.6611
+2025-11-06 16:09:11,581 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:10:41,502 [INFO]: Train Epoch: 7 | train_loss: 3.957176 | val_loss: 3.707620 | BLEU: 0.0692 | Acc: 0.3995 | PPL: 40.7567
+2025-11-06 16:12:23,332 [INFO]: Train Epoch: 15 | train_loss: 3.714440 | val_loss: 3.388160 | BLEU: 0.0808 | Acc: 0.4360 | PPL: 29.6114
+2025-11-06 16:12:23,519 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:12:23,669 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_15.pt
+2025-11-06 16:15:36,491 [INFO]: Train Epoch: 16 | train_loss: 3.711174 | val_loss: 3.399517 | BLEU: 0.0812 | Acc: 0.4356 | PPL: 29.9496
+2025-11-06 16:16:53,913 [INFO]: Train Epoch: 8 | train_loss: 3.958622 | val_loss: 3.692400 | BLEU: 0.0710 | Acc: 0.4028 | PPL: 40.1411
+2025-11-06 16:16:54,079 [INFO]: Saving current best: ./checkpoint/batchsize16/model_best.pt
+2025-11-06 16:18:51,477 [INFO]: Train Epoch: 17 | train_loss: 3.710654 | val_loss: 3.375696 | BLEU: 0.0839 | Acc: 0.4393 | PPL: 29.2446
+2025-11-06 16:18:51,668 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:22:04,978 [INFO]: Train Epoch: 18 | train_loss: 3.709279 | val_loss: 3.384196 | BLEU: 0.0809 | Acc: 0.4368 | PPL: 29.4943
+2025-11-06 16:23:07,715 [INFO]: Train Epoch: 9 | train_loss: 3.955397 | val_loss: 3.696029 | BLEU: 0.0688 | Acc: 0.4025 | PPL: 40.2870
+2025-11-06 16:25:17,885 [INFO]: Train Epoch: 19 | train_loss: 3.708303 | val_loss: 3.374155 | BLEU: 0.0823 | Acc: 0.4379 | PPL: 29.1996
+2025-11-06 16:25:18,031 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:28:18,355 [INFO]: Train Epoch: 20 | train_loss: 3.706680 | val_loss: 3.378261 | BLEU: 0.0849 | Acc: 0.4398 | PPL: 29.3197
+2025-11-06 16:28:18,512 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_20.pt
+2025-11-06 16:28:44,849 [INFO]: Train Epoch: 10 | train_loss: 3.955337 | val_loss: 3.698008 | BLEU: 0.0705 | Acc: 0.4028 | PPL: 40.3668
+2025-11-06 16:28:44,955 [INFO]: Saving checkpoint: ./checkpoint/batchsize16/checkpoint_epoch_10.pt
+2025-11-06 16:31:24,424 [INFO]: Train Epoch: 21 | train_loss: 3.706749 | val_loss: 3.373440 | BLEU: 0.0834 | Acc: 0.4382 | PPL: 29.1787
+2025-11-06 16:31:24,604 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:34:37,249 [INFO]: Train Epoch: 22 | train_loss: 3.705184 | val_loss: 3.377839 | BLEU: 0.0827 | Acc: 0.4385 | PPL: 29.3074
+2025-11-06 16:37:50,850 [INFO]: Train Epoch: 23 | train_loss: 3.704222 | val_loss: 3.374509 | BLEU: 0.0839 | Acc: 0.4387 | PPL: 29.2099
+2025-11-06 16:40:54,116 [INFO]: Train Epoch: 24 | train_loss: 3.703786 | val_loss: 3.377873 | BLEU: 0.0848 | Acc: 0.4383 | PPL: 29.3084
+2025-11-06 16:44:02,942 [INFO]: Train Epoch: 25 | train_loss: 3.705136 | val_loss: 3.388706 | BLEU: 0.0808 | Acc: 0.4366 | PPL: 29.6276
+2025-11-06 16:44:03,061 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_25.pt
+2025-11-06 16:47:09,013 [INFO]: Train Epoch: 26 | train_loss: 3.705765 | val_loss: 3.385924 | BLEU: 0.0832 | Acc: 0.4369 | PPL: 29.5453
+2025-11-06 16:50:19,209 [INFO]: Train Epoch: 27 | train_loss: 3.703555 | val_loss: 3.362395 | BLEU: 0.0834 | Acc: 0.4395 | PPL: 28.8582
+2025-11-06 16:50:19,392 [INFO]: Saving current best: ./checkpoint/en2de/model_best.pt
+2025-11-06 16:53:28,647 [INFO]: Train Epoch: 28 | train_loss: 3.703067 | val_loss: 3.367365 | BLEU: 0.0825 | Acc: 0.4389 | PPL: 29.0020
+2025-11-06 16:57:11,059 [INFO]: Train Epoch: 29 | train_loss: 3.704048 | val_loss: 3.380760 | BLEU: 0.0840 | Acc: 0.4397 | PPL: 29.3931
+2025-11-06 17:00:21,174 [INFO]: Train Epoch: 30 | train_loss: 3.703464 | val_loss: 3.370967 | BLEU: 0.0843 | Acc: 0.4394 | PPL: 29.1067
+2025-11-06 17:00:21,328 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_30.pt
+2025-11-06 17:01:45,446 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-06 17:03:33,815 [INFO]: Train Epoch: 31 | train_loss: 3.703660 | val_loss: 3.370311 | BLEU: 0.0829 | Acc: 0.4399 | PPL: 29.0876
+2025-11-06 17:04:57,826 [INFO]: Train Epoch: 1 | train_loss: 4.238881 | val_loss: 3.634424 | BLEU: 0.0651 | Acc: 0.3893 | PPL: 37.8800
+2025-11-06 17:04:57,987 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:06:24,686 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-06 17:06:44,960 [INFO]: Train Epoch: 32 | train_loss: 3.703144 | val_loss: 3.395873 | BLEU: 0.0814 | Acc: 0.4341 | PPL: 29.8407
+2025-11-06 17:08:13,924 [INFO]: Train Epoch: 2 | train_loss: 3.663003 | val_loss: 3.357298 | BLEU: 0.0905 | Acc: 0.4241 | PPL: 28.7115
+2025-11-06 17:08:14,108 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:09:34,874 [INFO]: Train Epoch: 1 | train_loss: 4.944988 | val_loss: 4.456134 | BLEU: 0.0117 | Acc: 0.3017 | PPL: 86.1538
+2025-11-06 17:09:34,931 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:09:59,243 [INFO]: Train Epoch: 33 | train_loss: 3.702308 | val_loss: 3.375167 | BLEU: 0.0815 | Acc: 0.4384 | PPL: 29.2292
+2025-11-06 17:11:25,612 [INFO]: Train Epoch: 3 | train_loss: 3.469522 | val_loss: 3.190152 | BLEU: 0.1109 | Acc: 0.4449 | PPL: 24.2921
+2025-11-06 17:11:25,800 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:12:45,729 [INFO]: Train Epoch: 2 | train_loss: 4.397536 | val_loss: 4.107218 | BLEU: 0.0281 | Acc: 0.3443 | PPL: 60.7774
+2025-11-06 17:12:45,792 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:13:13,020 [INFO]: Train Epoch: 34 | train_loss: 3.700381 | val_loss: 3.385887 | BLEU: 0.0817 | Acc: 0.4369 | PPL: 29.5442
+2025-11-06 17:14:41,872 [INFO]: Train Epoch: 4 | train_loss: 3.354564 | val_loss: 3.077667 | BLEU: 0.1234 | Acc: 0.4600 | PPL: 21.7077
+2025-11-06 17:14:42,062 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:17:49,939 [INFO]: Train Epoch: 3 | train_loss: 4.141973 | val_loss: 3.892140 | BLEU: 0.0442 | Acc: 0.3701 | PPL: 49.0157
+2025-11-06 17:17:50,003 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:18:51,707 [INFO]: Train Epoch: 35 | train_loss: 3.702489 | val_loss: 3.375003 | BLEU: 0.0822 | Acc: 0.4379 | PPL: 29.2244
+2025-11-06 17:18:51,866 [INFO]: Saving checkpoint: ./checkpoint/en2de/checkpoint_epoch_35.pt
+2025-11-06 17:21:57,192 [INFO]: Train Epoch: 5 | train_loss: 3.285971 | val_loss: 3.028292 | BLEU: 0.1305 | Acc: 0.4674 | PPL: 20.6619
+2025-11-06 17:21:57,325 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:21:57,426 [INFO]: Saving checkpoint: ./checkpoint/optimizer/adamax/checkpoint_epoch_5.pt
+2025-11-06 17:24:15,129 [INFO]: Train Epoch: 4 | train_loss: 3.967735 | val_loss: 3.731744 | BLEU: 0.0564 | Acc: 0.3883 | PPL: 41.7518
+2025-11-06 17:24:15,177 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:24:44,702 [INFO]: Train Epoch: 36 | train_loss: 3.702488 | val_loss: 3.368114 | BLEU: 0.0833 | Acc: 0.4403 | PPL: 29.0237
+2025-11-06 17:26:08,131 [INFO]: Train Epoch: 6 | train_loss: 3.244694 | val_loss: 2.989374 | BLEU: 0.1354 | Acc: 0.4728 | PPL: 19.8732
+2025-11-06 17:26:08,323 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:27:22,299 [INFO]: Train Epoch: 5 | train_loss: 3.834382 | val_loss: 3.618344 | BLEU: 0.0666 | Acc: 0.4000 | PPL: 37.2758
+2025-11-06 17:27:22,361 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:27:22,416 [INFO]: Saving checkpoint: ./checkpoint/sgd/checkpoint_epoch_5.pt
+2025-11-06 17:27:58,643 [INFO]: Train Epoch: 37 | train_loss: 3.702737 | val_loss: 3.373918 | BLEU: 0.0839 | Acc: 0.4395 | PPL: 29.1927
+2025-11-06 17:27:58,643 [INFO]: Early stopping at epoch 37
+2025-11-06 17:29:17,130 [INFO]: Train Epoch: 7 | train_loss: 3.214346 | val_loss: 2.959577 | BLEU: 0.1375 | Acc: 0.4771 | PPL: 19.2898
+2025-11-06 17:29:17,319 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:30:26,836 [INFO]: Train Epoch: 6 | train_loss: 3.727499 | val_loss: 3.518653 | BLEU: 0.0764 | Acc: 0.4110 | PPL: 33.7390
+2025-11-06 17:30:26,899 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:32:27,008 [INFO]: Train Epoch: 8 | train_loss: 3.191771 | val_loss: 2.945319 | BLEU: 0.1420 | Acc: 0.4789 | PPL: 19.0167
+2025-11-06 17:32:27,185 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:33:34,673 [INFO]: Train Epoch: 7 | train_loss: 3.639434 | val_loss: 3.460189 | BLEU: 0.0807 | Acc: 0.4153 | PPL: 31.8230
+2025-11-06 17:33:34,736 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:35:38,880 [INFO]: Train Epoch: 9 | train_loss: 3.174294 | val_loss: 2.928335 | BLEU: 0.1422 | Acc: 0.4824 | PPL: 18.6965
+2025-11-06 17:35:39,066 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:36:37,152 [INFO]: Train Epoch: 8 | train_loss: 3.565849 | val_loss: 3.393804 | BLEU: 0.0877 | Acc: 0.4229 | PPL: 29.7790
+2025-11-06 17:36:37,195 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:38:48,585 [INFO]: Train Epoch: 10 | train_loss: 3.163236 | val_loss: 2.914892 | BLEU: 0.1434 | Acc: 0.4837 | PPL: 18.4468
+2025-11-06 17:38:48,721 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:38:48,824 [INFO]: Saving checkpoint: ./checkpoint/optimizer/adamax/checkpoint_epoch_10.pt
+2025-11-06 17:39:40,786 [INFO]: Train Epoch: 9 | train_loss: 3.501832 | val_loss: 3.323393 | BLEU: 0.0960 | Acc: 0.4311 | PPL: 27.7544
+2025-11-06 17:39:40,835 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:42:41,517 [INFO]: Train Epoch: 10 | train_loss: 3.448426 | val_loss: 3.285910 | BLEU: 0.0987 | Acc: 0.4339 | PPL: 26.7333
+2025-11-06 17:42:41,582 [INFO]: Saving current best: ./checkpoint/sgd/model_best.pt
+2025-11-06 17:42:41,631 [INFO]: Saving checkpoint: ./checkpoint/sgd/checkpoint_epoch_10.pt
+2025-11-06 17:42:55,336 [INFO]: Transformer(
+  (encoder): Encoder(
+    (word_embeddings): WordEmbeddings(14813, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x EncoderLayer(
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (decoder): Decoder(
+    (word_embeddings): WordEmbeddings(12476, 192)
+    (pe): PositionEmbeddings(200, 192)
+    (layers): ModuleList(
+      (0-1): 2 x DecoderLayer(
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=192, out_features=192, bias=True)
+          (fc_k): Linear(in_features=192, out_features=192, bias=True)
+          (fc_v): Linear(in_features=192, out_features=192, bias=True)
+          (fc_o): Linear(in_features=192, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=192, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=192, bias=True)
+          (dropout): Dropout(p=0.2, inplace=False)
+        )
+        (self_attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (attention_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+        (self_attention_dropout): Dropout(p=0.2, inplace=False)
+        (attention_dropout): Dropout(p=0.2, inplace=False)
+        (ff_dropout): Dropout(p=0.2, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (fc): Linear(in_features=192, out_features=12476, bias=True)
+)
+Trainable parameters: 9406588
+2025-11-06 17:46:00,562 [INFO]: Train Epoch: 1 | train_loss: 4.238881 | val_loss: 3.634424 | BLEU: 0.0651 | Acc: 0.3893 | PPL: 37.8800
+2025-11-06 17:46:00,684 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:49:09,482 [INFO]: Train Epoch: 2 | train_loss: 3.663003 | val_loss: 3.357298 | BLEU: 0.0905 | Acc: 0.4241 | PPL: 28.7115
+2025-11-06 17:49:09,658 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:52:19,560 [INFO]: Train Epoch: 3 | train_loss: 3.469522 | val_loss: 3.190152 | BLEU: 0.1109 | Acc: 0.4449 | PPL: 24.2921
+2025-11-06 17:52:19,736 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:55:30,002 [INFO]: Train Epoch: 4 | train_loss: 3.354564 | val_loss: 3.077667 | BLEU: 0.1234 | Acc: 0.4600 | PPL: 21.7077
+2025-11-06 17:55:30,144 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:58:40,792 [INFO]: Train Epoch: 5 | train_loss: 3.285971 | val_loss: 3.028292 | BLEU: 0.1305 | Acc: 0.4674 | PPL: 20.6619
+2025-11-06 17:58:40,975 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 17:58:41,120 [INFO]: Saving checkpoint: ./checkpoint/optimizer/adamax/checkpoint_epoch_5.pt
+2025-11-06 18:01:51,390 [INFO]: Train Epoch: 6 | train_loss: 3.244694 | val_loss: 2.989374 | BLEU: 0.1354 | Acc: 0.4728 | PPL: 19.8732
+2025-11-06 18:01:51,569 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 18:05:03,414 [INFO]: Train Epoch: 7 | train_loss: 3.214346 | val_loss: 2.959577 | BLEU: 0.1375 | Acc: 0.4771 | PPL: 19.2898
+2025-11-06 18:05:03,587 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 18:08:13,062 [INFO]: Train Epoch: 8 | train_loss: 3.191771 | val_loss: 2.945319 | BLEU: 0.1420 | Acc: 0.4789 | PPL: 19.0167
+2025-11-06 18:08:13,241 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 18:12:51,352 [INFO]: Train Epoch: 9 | train_loss: 3.174294 | val_loss: 2.928335 | BLEU: 0.1422 | Acc: 0.4824 | PPL: 18.6965
+2025-11-06 18:12:51,526 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 18:18:25,104 [INFO]: Train Epoch: 10 | train_loss: 3.163236 | val_loss: 2.914892 | BLEU: 0.1434 | Acc: 0.4837 | PPL: 18.4468
+2025-11-06 18:18:25,285 [INFO]: Saving current best: ./checkpoint/optimizer/adamax/model_best.pt
+2025-11-06 18:18:25,429 [INFO]: Saving checkpoint: ./checkpoint/optimizer/adamax/checkpoint_epoch_10.pt
