@@ -2,7 +2,10 @@
 
 手动实现Transformer: seq2seq，机器翻译，英文<-->德文
 
-Github链接：https://github.com/Li-Zhenghao66666/MidtermAssignment
+Github链接：https://github.com/Li-Zhenghao66666/Transformer
+
+用来测试的模型权重下载（其余训练过程中记录的权重由于受大小影响已删除）：
+链接: https://pan.baidu.com/s/1Ur1C3aXKlLBulU9LAQSVLg?pwd=p72s 提取码: p72s
 
 ### 安装
 
@@ -18,7 +21,7 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 
 #克隆项目并安装项目库
 git clone https://github.com/Li-Zhenghao66666/MidtermAssignment.git
-cd xxxxxxxxxxx
+cd xxxxxxxxxxx                            #具体情况具体分析
 pip install -r requirements .txt
 ```
 
@@ -26,7 +29,7 @@ pip install -r requirements .txt
 
 ```
 .
-├──────  checkpoint/              # 模型保存目录（自动生成）
+├──────   results/                 # 训练结果
 ├──────   config/                  # 配置文件目录
 ├──────   data/                    # 数据处理模块
 ├──────   dataset/                 # 训练与验证数据集
@@ -94,11 +97,6 @@ en_vocab.save('dataset/en_vocab.pkl')
 bash scripts/train.sh
 #脚本执行测试(Linux)：
 bash scripts/test.sh
-
-#脚本执行训练(win)：
-scripts\train_win.bat
-#脚本执行测试(win)：
-scripts\test_win.bat
 ```
 
 
@@ -165,31 +163,60 @@ python compare.py head2/head2.pkl head4/head4.pkl head6/head6.pkl --outdir plot 
 ```python
 #德语意思：很高兴见到你
 python test_de_en.py --sent "Freut mich, dich zu sehen!" --config checkpoint/base50epoch/config.json --model checkpoint/base50epoch/model_best.pt
+
+#输出：
+2025-11-06 20:19:35,831 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+Using device: cuda:0
+Input sentence: Freut mich, dich zu sehen!
+Tokenized input: ['<sos>', 'freut', 'mich', ',', 'dich', 'zu', 'sehen', '!', '<eos>']
+Output tokens: ['<sos>', 'i', "'m", 'happy', 'to', 'see', 'you', '!', '<eos>']
+Translation: i 'm happy to see you !
 ```
 
-![](C:\Users\86158\Desktop\test1.png)
+
 
 ```python
 #德语意思：谢谢你的帮助
 python test_de_en.py --sent "Danke für deine Hilfe!" --config checkpoint/base50epoch/config.json --model checkpoint/base50epoch/model_best.pt
+
+#输出：
+2025-11-06 20:20:12,853 [DEBUG]: Config loaded from file checkpoint/base50epoch/config.json
+Using device: cuda:0
+Input sentence: Danke für deine Hilfe!
+Tokenized input: ['<sos>', 'danke', 'für', 'deine', 'hilfe', '!', '<eos>']
+Output tokens: ['<sos>', 'thank', 'you', 'for', 'your', 'help', '!', '<eos>']
+Translation: thank you for your help !
 ```
 
-![](C:\Users\86158\Desktop\test2.png)
+
 
 ##### 英译德命令示例：
 
-```
+```python
 python test_en_de.py --sent "This is a simple example." --model checkpoint/en2de/model_best.pt
+
+#输出(经过有道翻译后是正确的）：
+2025-11-06 20:21:48,077 [DEBUG]: Config loaded from file config.json
+Using device: cuda:0
+[Info] src_vocab=14813, trg_vocab=12476, ckpt(enc)=12476, ckpt(dec)=14813
+[Fix] Detected swapped vocab sizes vs checkpoint. Swapping src/trg vocabs for model build.
+Input: This is a simple example.
+Tokens: ['<sos>', 'das', 'ist', 'ein', 'einfach', 'beispiel', '.', '<eos>']
+Translation (EN→DE): das ist ein einfach beispiel .
 ```
 
-![image-20251106193937324](C:\Users\86158\AppData\Roaming\Typora\typora-user-images\image-20251106193937324.png)
 
-![image-20251106194510969](C:\Users\86158\AppData\Roaming\Typora\typora-user-images\image-20251106194510969.png)
 
-```
+```python
 python test_en_de.py --sent "nice to meet you" --model checkpoint/en2de/model_best.pt
+
+#输出(经过有道翻译后是正确的）：
+2025-11-06 20:22:18,388 [DEBUG]: Config loaded from file config.json
+Using device: cuda:0
+[Info] src_vocab=14813, trg_vocab=12476, ckpt(enc)=12476, ckpt(dec)=14813
+[Fix] Detected swapped vocab sizes vs checkpoint. Swapping src/trg vocabs for model build.
+Input: nice to meet you
+Tokens: ['<sos>', 'schön', ',', 'um', 'sie', 'zu', 'treffen', '.', '<eos>']
+Translation (EN→DE): schön , um sie zu treffen .
 ```
 
-![image-20251106194322495](C:\Users\86158\AppData\Roaming\Typora\typora-user-images\image-20251106194322495.png)
-
-![image-20251106194427711](C:\Users\86158\AppData\Roaming\Typora\typora-user-images\image-20251106194427711.png)
